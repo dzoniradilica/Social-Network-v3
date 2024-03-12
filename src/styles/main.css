@@ -147,6 +147,14 @@ header .logo {
   font-family: 'Havertica';
 }
 
+.custom-modal #registrationForm .registration-inner-form h3 {
+  position: absolute;
+  top: 5px;
+  right: 4%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .custom-modal #registrationForm .registration-inner-form .label-input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,17 +169,27 @@ header .logo {
   font-family: 'Havertica';
   font-size: 20px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .custom-modal #registrationForm .registration-inner-form .label-input-wrapper input {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   background-color: #323232;
   padding: 5px;
   color: #d9e4ed;
+  font-size: 16px;
 }
 
 .custom-modal #registrationForm .registration-inner-form .registration-btn-inner {
   text-align: center;
   margin-top: 20px;
+}
+
+.custom-modal #registrationForm .registration-inner-form ul {
+  list-style: none;
+}
+
+.custom-modal #registrationForm .registration-inner-form ul li {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */

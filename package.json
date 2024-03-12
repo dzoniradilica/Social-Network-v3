@@ -1,0 +1,13 @@
+{
+  "name": "social-network-v3",
+  "version": "1.0.0",
+  "description": "Simple Social Network",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Nikola",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

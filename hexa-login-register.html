@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hexa</title>
     <link rel="stylesheet" href="src/styles/main.css" />
+    <script type="module" src="dist/controller.js"></script>
   </head>
   <body>
     <header>
@@ -35,19 +36,20 @@
 
     <div class="info-for-registration">
       <p>New Here?</p>
-      <button>Sign Up Now</button>
+      <button id="openModal">Sign Up Now</button>
     </div>
 
     <div class="custom-modal">
       <form id="registrationForm">
         <div class="registration-inner-form">
           <h2>Registration</h2>
+          <h3 id="closeModal">X</h3>
 
           <div class="label-input-wrapper">
             <label for="usernmae">Username:</label>
             <input
               type="usernmae"
-              name="registration-usernmae"
+              name="registrationUsername"
               id="registrationUsername"
             />
           </div>
@@ -56,19 +58,22 @@
             <label for="email">Email:</label>
             <input
               type="email"
-              name="registration-email"
+              name="registrationEmail"
               id="registrationEmail"
             />
           </div>
 
           <div class="label-input-wrapper">
             <label for="password">Password:</label>
-            <input name="registration-password" id="registrationPassword" />
+            <input name="registrationPassword" id="registrationPassword" />
           </div>
 
           <div class="label-input-wrapper">
             <label for="password">Repeat Password:</label>
-            <input name="repeat-password" id="registrationRepeatPassword" />
+            <input
+              name="registrationRepeatPassword"
+              id="registrationRepeatPassword"
+            />
           </div>
 
           <div class="registration-btn-inner">
