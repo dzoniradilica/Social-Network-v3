@@ -5,18 +5,14 @@ export const state = {
 };
 
 export default class User {
-  constructor(
-    public email: string,
-    public username: string,
-    public password: string | number
-  ) {}
+  constructor() {}
 
-  async create() {
+  async create(email: string, username: string, password: string | number) {
     try {
       const sendData = {
-        email: this.email,
-        username: this.username,
-        password: this.password,
+        email: email,
+        username: username,
+        password: password,
       };
 
       const res = await fetch(
