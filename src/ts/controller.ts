@@ -1,48 +1,14 @@
 import Validator from './validator.js';
+import { configEl } from './configs/config-validation.js';
+import User from './model/model.js';
 
-export interface ConfigElements {
-  [prop: string]: {
-    required: boolean;
-    maxLength: number;
-    minLength: number;
-    email?: boolean;
-    matching?: string;
-  };
-}
-
-const configEl: ConfigElements = {
-  registrationUsername: {
-    required: true,
-    maxLength: 10,
-    minLength: 5,
-  },
-
-  registrationEmail: {
-    required: true,
-    minLength: 5,
-    maxLength: 50,
-    email: true,
-  },
-
-  registrationPassword: {
-    required: true,
-    minLength: 5,
-    maxLength: 20,
-    matching: 'registrationRepeatPassword',
-  },
-
-  registrationRepeatPassword: {
-    required: true,
-    minLength: 5,
-    maxLength: 20,
-    matching: 'registrationPassword',
-  },
-};
-
-new Validator(configEl, '#registrationForm');
+let validator = new Validator(configEl, '#registrationForm');
 
 const openModal = document.querySelector('#openModal')! as HTMLButtonElement;
 const closeModal = document.querySelector('#closeModal')! as HTMLHeadingElement;
+const registrationForm = document.querySelector(
+  '#registrationForm'
+)! as HTMLFormElement;
 
 const openAndCloseModal = function (
   btnModal: HTMLElement,
@@ -68,3 +34,22 @@ const openAndCloseModal = function (
 
 openAndCloseModal(openModal, 'none', 'block');
 openAndCloseModal(closeModal, 'block', 'none');
+
+registrationForm.addEventListener('submit', e => {
+  e.preventDefault();
+
+  const username = (
+    document.querySelector('#registrationUsername')! as HTMLInputElement
+  ).value;
+  const email = (
+    document.querySelector('#registrationEmail')! as HTMLInputElement
+  ).value;
+  const password = (
+    document.querySelector('#registrationPassword')! as HTMLInputElement
+  ).value;
+
+  if (validator.validationPassed()) {
+    let user = new User(email, username, password);
+    user.create();
+  } else alert('Invalid registration!');
+});

@@ -1,4 +1,4 @@
-import { ConfigElements } from './controller';
+import { ConfigElements } from './configs/config-validation';
 
 interface errorsBag {
   [prop: string]: string[];
@@ -19,7 +19,16 @@ export default class Validator {
     this.formId = id;
 
     this.config();
-    this.validate();
+  }
+
+  validationPassed() {
+    for (let key of Object.keys(this.errors)) {
+      if (this.errors[key].length > 0) {
+        return false;
+      }
+    }
+
+    return true;
   }
 
   private addHandlerInput(e: Event) {
@@ -29,15 +38,15 @@ export default class Validator {
 
     this.errors[fieldName] = [];
 
-    if (this.configEl[fieldName].required && fieldValue === '')
+    if (this.configEl[fieldName].required && fieldValue.length === 0)
       this.errors[fieldName].push('Field is required!');
 
-    if (fieldValue.length < this.configEl[fieldName].minLength)
+    if (fieldValue.length <= this.configEl[fieldName].minLength)
       this.errors[fieldName].push(
         `This field must have min ${this.configEl[fieldName].minLength} characters!`
       );
 
-    if (fieldValue.length > this.configEl[fieldName].maxLength)
+    if (fieldValue.length >= this.configEl[fieldName].maxLength)
       this.errors[fieldName].push(
         `This field can have max ${this.configEl[fieldName].maxLength} characters!`
       );
@@ -50,9 +59,10 @@ export default class Validator {
         `#${this.configEl[fieldName].matching}`
       )! as HTMLInputElement;
 
-      if (matchingEl.value !== fieldValue)
+      if (matchingEl.value !== fieldValue) {
         this.errors[fieldName].push('Passwords do not match!');
-      else {
+        this.errors[matchingEl.name] = [];
+      } else {
         this.errors[fieldName] = [];
         this.errors[matchingEl.name] = [];
       }
@@ -86,15 +96,6 @@ export default class Validator {
     allInputs.forEach(input => {
       input.addEventListener('input', this.addHandlerInput.bind(this));
     });
-  }
-
-  validate() {
-    for (const error of Object.values(this.errors)) {
-      if (error.length === 0) return true;
-      else {
-        return false;
-      }
-    }
   }
 
   private emailValidation(email: string) {
