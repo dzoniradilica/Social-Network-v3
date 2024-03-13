@@ -47,7 +47,7 @@
             </div>
 
             <div class="person-options">
-              <span id="changeProfile">Change Profile</span>
+              <span id="changeModal"> Change Profile</span>
               <span id="logout">Logout</span>
             </div>
 
@@ -74,6 +74,32 @@
           <div class="idk2"></div>
 
           <div class="idk3"></div>
+        </div>
+
+        <div class="custom-modal">
+          <form id="changeProfileForm">
+            <div class="change-inner-form">
+              <h3 id="closeModal">X</h3>
+
+              <div class="label-input-wrapper">
+                <label for="usernmae">Username:</label>
+                <input
+                  type="usernmae"
+                  name="changeUsername"
+                  id="changeUsername"
+                />
+              </div>
+
+              <div class="label-input-wrapper">
+                <label for="email">Email:</label>
+                <input type="email" name="changeEmail" id="changeEmail" />
+              </div>
+
+              <div class="change-btn-inner">
+                <button id="changeProfile">Change Profile</button>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>

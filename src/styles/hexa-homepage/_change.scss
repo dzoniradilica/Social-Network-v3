@@ -1,0 +1,74 @@
+.custom-modal {
+  position: none; /* Sit on top of the page content */
+  display: none;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+
+  #changeProfileForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .change-inner-form {
+      position: relative;
+      padding: 100px;
+      background-color: #0c10108e;
+      color: $textColor;
+      width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #0c184a;
+      border-radius: 10px;
+
+      h3 {
+        position: absolute;
+        top: 5px;
+        right: 4%;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .label-input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-family: 'Havertica';
+          font-size: 20px;
+          margin-bottom: 10px;
+          margin-top: 20px;
+        }
+
+        input {
+          margin-bottom: 5px;
+          background-color: #323232;
+          padding: 5px;
+          color: $textColor;
+          font-size: 16px;
+        }
+      }
+
+      .change-btn-inner {
+        text-align: center;
+        margin-top: 20px;
+
+        button {
+          margin-top: 10px;
+          font-family: 'Havertica';
+          background-color: #323232;
+          color: white;
+          padding: 10px 30px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

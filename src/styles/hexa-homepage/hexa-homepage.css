@@ -138,4 +138,71 @@ section .post-wrapper .post-btn span {
   border-radius: 15px;
   color: #d9e4ed;
   cursor: pointer;
+}
+
+.custom-modal {
+  position: none; /* Sit on top of the page content */
+  display: none;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.custom-modal #changeProfileForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-modal #changeProfileForm .change-inner-form {
+  position: relative;
+  padding: 100px;
+  background-color: rgba(12, 16, 16, 0.5568627451);
+  color: #d9e4ed;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #0c184a;
+  border-radius: 10px;
+}
+.custom-modal #changeProfileForm .change-inner-form h3 {
+  position: absolute;
+  top: 5px;
+  right: 4%;
+  font-size: 24px;
+  cursor: pointer;
+}
+.custom-modal #changeProfileForm .change-inner-form .label-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.custom-modal #changeProfileForm .change-inner-form .label-input-wrapper label {
+  font-family: "Havertica";
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.custom-modal #changeProfileForm .change-inner-form .label-input-wrapper input {
+  margin-bottom: 5px;
+  background-color: #323232;
+  padding: 5px;
+  color: #d9e4ed;
+  font-size: 16px;
+}
+.custom-modal #changeProfileForm .change-inner-form .change-btn-inner {
+  text-align: center;
+  margin-top: 20px;
+}
+.custom-modal #changeProfileForm .change-inner-form .change-btn-inner button {
+  margin-top: 10px;
+  font-family: "Havertica";
+  background-color: #323232;
+  color: white;
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
 }/*# sourceMappingURL=hexa-homepage.css.map */
