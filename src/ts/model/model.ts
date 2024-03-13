@@ -1,11 +1,13 @@
 import { ConfigUser } from '../configs/user-config';
 
-export const state = {
+export const state: any = {
   users: [],
 };
 
 class User {
-  constructor() {}
+  constructor() {
+    this.getAll();
+  }
 
   async create(email: string, username: string, password: string | number) {
     try {
@@ -27,6 +29,7 @@ class User {
       );
 
       let data = await res.json();
+      console.log(data);
 
       return data;
     } catch (err) {
@@ -38,6 +41,21 @@ class User {
     try {
       const res = await fetch(
         `https://65d7959727d9a3bc1d7b607e.mockapi.io/users`
+      );
+      const data = await res.json();
+
+      state.users.push(data);
+
+      return data;
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  async get(userId: string | number = 1) {
+    try {
+      const res = await fetch(
+        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users/${userId}`
       );
       const data = await res.json();
 
@@ -69,6 +87,11 @@ class User {
     } catch (err) {
       console.log(err);
     }
+  }
+
+  async change() {
+    try {
+    } catch (err) {}
   }
 }
 

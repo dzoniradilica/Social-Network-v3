@@ -8,6 +8,8 @@ class ChangeView {
       ).style.display = `${display}`;
     });
   }
+
+  changeProfileData() {}
 }
 
 export const changeView = new ChangeView();

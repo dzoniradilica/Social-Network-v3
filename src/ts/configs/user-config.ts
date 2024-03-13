@@ -4,3 +4,7 @@ export interface ConfigUser {
   password: string | number;
   username: string;
 }
+
+export interface objectState {
+  [prop: string]: ConfigUser[] | {};
+}
