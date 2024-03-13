@@ -1,0 +1,33 @@
+header {
+  padding: 10px 0;
+  background-color: $bgSearch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+      max-width: 50%;
+      margin-right: 20px;
+      background-color: $bgBlack;
+      border: 1px solid $bgBlack;
+      color: $textColor;
+    }
+  }
+
+  .person-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

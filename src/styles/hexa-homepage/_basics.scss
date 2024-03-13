@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url(../../../fonts/Helvetica.ttf);
+}
+
+// Hexa Homepage
+$bgBlack: #131415;
+$bgSearch: #323539;
+$btnAndHovers: #ffd37d;
+$textColor: #d9e4ed;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgBlack;
+}
