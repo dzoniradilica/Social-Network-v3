@@ -36,10 +36,9 @@ export default class User {
 }
 
 export class Session {
-  sessionId: string = '';
+  sessionId: string = document.cookie.split('=')[1];
 
   create(cName: string, cvalue: string | number) {
-    this.sessionId = cName;
     const d = new Date();
     d.setTime(d.getTime() + 2 * 24 * 60 * 60 * 1000);
     let expires = 'expires=' + d.toUTCString();

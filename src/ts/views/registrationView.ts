@@ -57,9 +57,9 @@ class RegistrationView {
           console.log(userData.id);
 
           session.create(userData.username, userData.id);
+          window.location.href = '../../../hexa-homepage.html';
         };
 
-        // window.location.href = '../../../hexa-homepage.html';
         createSessionAndUser();
       } else alert('Invalid registration!');
     });

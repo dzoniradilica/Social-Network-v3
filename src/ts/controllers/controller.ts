@@ -1,11 +1,11 @@
 import { registrationView } from '../views/registrationView.js';
-// import { Session } from '../model/model.js';
+import { Session } from '../model/model.js';
 
-// const session = new Session();
+const session = new Session();
 
-// if (session.sessionId) {
-//   window.location.href = '../../../hexa-homepage.html';
-// } else window.location.href = '../../../hexa-login-register.html';
+if (session.sessionId) {
+  window.location.href = '../../../hexa-homepage.html';
+}
 
 const controlRegistrationForm = function () {
   registrationView.openAndCloseModal('#openModal', 'none', 'block');
@@ -19,5 +19,3 @@ const init = function () {
 };
 
 init();
-
-console.log('rdi');
