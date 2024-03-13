@@ -1,10 +1,8 @@
 import { registrationView } from '../views/registrationView.js';
-import { Session } from '../model/model.js';
+import { session } from '../model/model.js';
 import { loginView } from '../views/loginFormView.js';
 
-const session = new Session();
-
-if (session.sessionId) {
+if (session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-homepage.html';
 }
 

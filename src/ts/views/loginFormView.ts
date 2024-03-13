@@ -1,13 +1,9 @@
-import User from '../model/model.js';
-
-const user = new User();
+import { user } from '../model/model.js';
 
 class LoginView {
   loginBtn = document.querySelector('#loginForm')! as HTMLFormElement;
 
   validationLogin() {
-    console.log(this.loginBtn);
-
     this.loginBtn.addEventListener('submit', function (e) {
       e.preventDefault();
 

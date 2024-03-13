@@ -1,8 +1,16 @@
-import { Session } from '../model/model.js';
+import { session } from '../model/model.js';
+import { logoutView } from '../views/logoutView.js';
 
-const session = new Session();
-console.log(session.sessionId);
-
-if (!session.sessionId) {
+if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
 }
+
+const controlLogout = function () {
+  logoutView.destroySession();
+};
+
+const init = function () {
+  controlLogout();
+};
+
+init();

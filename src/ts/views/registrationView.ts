@@ -1,10 +1,8 @@
 import Validator from '../validator.js';
 import { configEl } from '../configs/config-validation.js';
-import User, { Session } from '../model/model.js';
+import { user, session } from '../model/model.js';
 
 const validator = new Validator(configEl, '#registrationForm');
-const user = new User();
-const session = new Session();
 
 class RegistrationView {
   registrationForm = document.querySelector(
