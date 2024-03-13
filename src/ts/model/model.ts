@@ -2,6 +2,7 @@ import { ConfigUser } from '../configs/user-config';
 
 export const state: any = {
   users: [],
+  user: {},
 };
 
 class User {
@@ -29,7 +30,12 @@ class User {
       );
 
       let data = await res.json();
-      console.log(data);
+
+      state.user = {
+        email: data.email,
+        username: data.username,
+        password: data.password,
+      };
 
       return data;
     } catch (err) {

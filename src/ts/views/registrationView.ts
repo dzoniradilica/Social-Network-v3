@@ -54,7 +54,7 @@ class RegistrationView {
           const userData = await user.create(email, username, password);
 
           session.create(userData.id);
-          // window.location.href = '../../../hexa-homepage.html';
+          window.location.href = '../../../hexa-homepage.html';
         };
 
         createSessionAndUser();
