@@ -54,9 +54,8 @@ class RegistrationView {
       if (validator.validationPassed()) {
         const createSessionAndUser = async function () {
           const userData = await user.create(email, username, password);
-          console.log(userData.id);
 
-          session.create(userData.username, userData.id);
+          session.create(userData.id);
           window.location.href = '../../../hexa-homepage.html';
         };
 
