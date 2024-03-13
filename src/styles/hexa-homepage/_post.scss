@@ -1,0 +1,28 @@
+section {
+  .post-wrapper {
+    margin-top: 20px;
+    background-color: #1f2124;
+    border-radius: 5px;
+    padding: 20px;
+
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      color: $textColor;
+    }
+
+    .post-btn {
+      text-align: right;
+
+      span {
+        padding: 6px 15px;
+        border: 1px solid $btnAndHovers;
+        border-radius: 15px;
+        color: $textColor;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,20 +1,24 @@
-.idk2 {
-  margin-top: 20px;
-  padding: 20px 40px;
-  color: #d9e4ed;
-  background-color: #1f2124;
-  border-radius: 5px;
-  width: 75%;
-  min-height: 270px;
-  margin-bottom: 27px;
-}
+section {
+  min-height: 90vh;
 
-.idk3 {
-  margin-top: 20px;
-  padding: 20px 40px;
-  color: #d9e4ed;
-  background-color: #1f2124;
-  border-radius: 5px;
-  width: 75%;
-  min-height: 300px;
+  .idk2 {
+    margin-top: 20px;
+    padding: 20px 40px;
+    color: #d9e4ed;
+    background-color: #1f2124;
+    border-radius: 5px;
+    width: 75%;
+    min-height: 45vh;
+    margin-bottom: 40px;
+  }
+
+  .idk3 {
+    margin-top: 20px;
+    padding: 20px 40px;
+    color: #d9e4ed;
+    background-color: #1f2124;
+    border-radius: 5px;
+    width: 75%;
+    min-height: 45vh;
+  }
 }

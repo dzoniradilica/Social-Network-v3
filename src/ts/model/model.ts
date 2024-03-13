@@ -28,9 +28,21 @@ export default class User {
 
       let data = await res.json();
 
-      console.log(data);
+      return data;
     } catch (err) {
       console.log(err);
     }
+  }
+}
+
+export class Session {
+  sessionId: string = '';
+
+  create(cName: string, cvalue: string | number) {
+    this.sessionId = cName;
+    const d = new Date();
+    d.setTime(d.getTime() + 2 * 24 * 60 * 60 * 1000);
+    let expires = 'expires=' + d.toUTCString();
+    document.cookie = cName + '=' + cvalue + ';' + expires + ';path=/';
   }
 }

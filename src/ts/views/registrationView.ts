@@ -1,9 +1,10 @@
 import Validator from '../validator.js';
 import { configEl } from '../configs/config-validation.js';
-import User from '../model/model.js';
+import User, { Session } from '../model/model.js';
 
 const validator = new Validator(configEl, '#registrationForm');
 const user = new User();
+const session = new Session();
 
 class RegistrationView {
   registrationForm = document.querySelector(
@@ -51,8 +52,15 @@ class RegistrationView {
       ).value;
 
       if (validator.validationPassed()) {
-        user.create(email, username, password);
-        window.location.href = '../../../hexa-homepage.html';
+        const createSessionAndUser = async function () {
+          const userData = await user.create(email, username, password);
+          console.log(userData.id);
+
+          session.create(userData.username, userData.id);
+        };
+
+        // window.location.href = '../../../hexa-homepage.html';
+        createSessionAndUser();
       } else alert('Invalid registration!');
     });
   }

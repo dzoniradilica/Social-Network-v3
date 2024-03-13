@@ -1,11 +1,10 @@
 @font-face {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   src: url(../../fonts/Helvetica.ttf);
 }
-
 button {
   margin-top: 10px;
-  font-family: 'Havertica';
+  font-family: "Havertica";
   background-color: #323232;
   color: white;
   padding: 10px 30px;
@@ -16,12 +15,11 @@ button {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #020808de;
+  background-color: rgba(2, 8, 8, 0.8705882353);
 }
 
 header .logo {
@@ -32,14 +30,12 @@ header .logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 #loginForm .login-inner-form {
   position: relative;
   padding: 100px;
-  background-color: #0c10108e;
+  background-color: rgba(12, 16, 16, 0.5568627451);
   color: #d9e4ed;
   width: 550px;
   margin-left: auto;
@@ -47,7 +43,6 @@ header .logo {
   border: 1px solid #0c184a;
   border-radius: 10px;
 }
-
 #loginForm .login-inner-form h2 {
   margin-top: 5px;
   text-align: center;
@@ -55,32 +50,23 @@ header .logo {
   top: 0;
   left: 0;
   right: 0;
-  font-family: 'Havertica';
+  font-family: "Havertica";
 }
-
 #loginForm .login-inner-form .label-input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #loginForm .login-inner-form .label-input-wrapper label {
-  font-family: 'Havertica';
+  font-family: "Havertica";
   font-size: 20px;
   margin-bottom: 10px;
 }
-
 #loginForm .login-inner-form .label-input-wrapper input {
   color: #d9e4ed;
   margin-bottom: 10px;
   background-color: #323232;
   padding: 5px;
 }
-
 #loginForm .login-inner-form .login-btn-inner {
   text-align: center;
   margin-top: 20px;
@@ -93,42 +79,33 @@ header .logo {
   right: 0;
   left: 0;
 }
-
 .info-for-registration p {
   color: #d9e4ed;
   font-size: 24px;
 }
 
 .custom-modal {
-  position: fixed;
-  /* Sit on top of the page content */
+  position: fixed; /* Sit on top of the page content */
   display: none;
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
-
 .custom-modal #registrationForm {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .custom-modal #registrationForm .registration-inner-form {
   position: relative;
   padding: 100px;
-  background-color: #0c10108e;
+  background-color: rgba(12, 16, 16, 0.5568627451);
   color: #d9e4ed;
   width: 550px;
   margin-left: auto;
@@ -136,7 +113,6 @@ header .logo {
   border: 1px solid #0c184a;
   border-radius: 10px;
 }
-
 .custom-modal #registrationForm .registration-inner-form h2 {
   margin-top: 5px;
   text-align: center;
@@ -144,9 +120,8 @@ header .logo {
   top: 0;
   left: 0;
   right: 0;
-  font-family: 'Havertica';
+  font-family: "Havertica";
 }
-
 .custom-modal #registrationForm .registration-inner-form h3 {
   position: absolute;
   top: 5px;
@@ -154,24 +129,16 @@ header .logo {
   font-size: 24px;
   cursor: pointer;
 }
-
 .custom-modal #registrationForm .registration-inner-form .label-input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .custom-modal #registrationForm .registration-inner-form .label-input-wrapper label {
-  font-family: 'Havertica';
+  font-family: "Havertica";
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
-
 .custom-modal #registrationForm .registration-inner-form .label-input-wrapper input {
   margin-bottom: 5px;
   background-color: #323232;
@@ -179,17 +146,13 @@ header .logo {
   color: #d9e4ed;
   font-size: 16px;
 }
-
 .custom-modal #registrationForm .registration-inner-form .registration-btn-inner {
   text-align: center;
   margin-top: 20px;
 }
-
 .custom-modal #registrationForm .registration-inner-form ul {
   list-style: none;
 }
-
 .custom-modal #registrationForm .registration-inner-form ul li {
   color: red;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

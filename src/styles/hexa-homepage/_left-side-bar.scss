@@ -9,6 +9,7 @@
   .person-content {
     text-align: center;
     color: $textColor;
+    min-height: 22.5vh;
 
     img {
       width: 80px;
@@ -24,12 +25,14 @@
   .person-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 75%;
     margin-top: 20px;
     padding: 20px 40px;
     color: $textColor;
     background-color: #1f2124;
     border-radius: 5px;
+    min-height: 12.5vh;
 
     span {
       border: 1px solid white;
@@ -37,6 +40,7 @@
       color: $textColor;
       border-radius: 5px;
       cursor: pointer;
+      height: 30px;
     }
   }
 
@@ -47,6 +51,6 @@
     background-color: #1f2124;
     border-radius: 5px;
     width: 75%;
-    min-height: 320px;
+    min-height: 55vh;
   }
 }
