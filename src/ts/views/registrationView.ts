@@ -1,13 +1,12 @@
-import Validator from '../validator.js';
-import { configEl } from '../configs/config-validation.js';
-import { user, session } from '../model/model.js';
-
-const validator = new Validator(configEl, '#registrationForm');
-
 class RegistrationView {
   registrationForm = document.querySelector(
     '#registrationForm'
   )! as HTMLFormElement;
+
+  constructor() {
+    this.openAndCloseModal('#openModal', 'none', 'block');
+    this.openAndCloseModal('#closeModal', 'block', 'none');
+  }
 
   openAndCloseModal(
     btnModalId: string,
@@ -35,7 +34,7 @@ class RegistrationView {
     });
   }
 
-  addHandlerSubmit() {
+  addHandlerSubmit(handler: any) {
     this.registrationForm.addEventListener('submit', e => {
       e.preventDefault();
 
@@ -49,16 +48,7 @@ class RegistrationView {
         document.querySelector('#registrationPassword')! as HTMLInputElement
       ).value;
 
-      if (validator.validationPassed()) {
-        const createSessionAndUser = async function () {
-          const userData = await user.create(email, username, password);
-
-          session.create(userData.id);
-          window.location.href = '../../../hexa-homepage.html';
-        };
-
-        createSessionAndUser();
-      } else alert('Invalid registration!');
+      handler([username, email, password]);
     });
   }
 }
