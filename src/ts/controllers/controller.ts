@@ -10,24 +10,34 @@ if (session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-homepage.html';
 }
 
-const controlRegistrationForm = async function (userData: any) {
-  const [username, email, password] = userData;
+const controlRegistrationForm = async function (userData: string[]) {
+  try {
+    const [username, email, password] = userData;
 
-  if (validator.validationPassed()) {
-    const data = await user.create(email, username, password);
+    if (validator.validationPassed()) {
+      const data = await user.create(email, username, password);
 
-    session.create(data.id);
-    window.location.href = '../../../hexa-homepage.html';
-  } else alert('Invalid registration!');
+      session.create(data.id);
+      window.location.href = '../../../hexa-homepage.html';
+    } else alert('Invalid registration!');
+  } catch (err) {
+    console.log(err);
+  }
 };
 
-const controlLoginForm = function () {
-  loginView.validationLogin();
+const controlLoginForm = async function (userData: string[]) {
+  try {
+    const [email, password] = userData;
+
+    await user.login(email, password);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const init = function () {
   registrationView.addHandlerSubmit(controlRegistrationForm);
-  controlLoginForm();
+  loginView.addHandlerLogin(controlLoginForm);
 };
 
 init();

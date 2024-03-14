@@ -34,7 +34,7 @@ class RegistrationView {
     });
   }
 
-  addHandlerSubmit(handler: any) {
+  addHandlerSubmit(handler: Function) {
     this.registrationForm.addEventListener('submit', e => {
       e.preventDefault();
 

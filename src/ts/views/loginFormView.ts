@@ -1,9 +1,7 @@
-import { user } from '../model/model.js';
-
 class LoginView {
   loginBtn = document.querySelector('#loginForm')! as HTMLFormElement;
 
-  validationLogin() {
+  addHandlerLogin(handler: Function) {
     this.loginBtn.addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -13,10 +11,7 @@ class LoginView {
         document.querySelector('#loginPassword')! as HTMLInputElement
       ).value;
 
-      const loginUser = async function () {
-        await user.login(email, password);
-      };
-      loginUser();
+      handler(email, password);
     });
   }
 }
