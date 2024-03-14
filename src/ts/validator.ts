@@ -1,10 +1,11 @@
 import { ConfigElements } from './configs/config-validation';
+import { configEl } from './configs/config-validation';
 
 interface errorsBag {
   [prop: string]: string[];
 }
 
-export default class Validator {
+class Validator {
   private configEl;
   private formId;
   private errors: errorsBag = {
@@ -105,3 +106,5 @@ export default class Validator {
     return false;
   }
 }
+
+export const validator = new Validator(configEl, '#registrationForm');

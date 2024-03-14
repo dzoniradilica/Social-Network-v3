@@ -1,4 +1,4 @@
-import { session, user } from '../model/model.js';
+import { session, user } from '../models/model.js';
 import { logoutView } from '../views/logoutView.js';
 import { changeView } from '../views/changeFormView.js';
 import { profileView } from '../views/profileView.js';

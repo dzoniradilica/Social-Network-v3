@@ -1,10 +1,8 @@
-import Validator from '../validator.js';
-import { configEl } from '../configs/config-validation.js';
+import { validator } from '../validator.js';
 import { registrationView } from '../views/registrationView.js';
-import { session, user } from '../model/model.js';
+import { user } from '../models/User.js';
+import { session } from '../models/Session.js';
 import { loginView } from '../views/loginFormView.js';
-
-const validator = new Validator(configEl, '#registrationForm');
 
 if (session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-homepage.html';

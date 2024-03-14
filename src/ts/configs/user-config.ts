@@ -5,6 +5,6 @@ export interface ConfigUser {
   username: string;
 }
 
-export interface objectState {
-  [prop: string]: ConfigUser[] | {};
+export interface UsersState {
+  [prop: string]: ConfigUser[];
 }

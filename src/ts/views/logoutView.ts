@@ -1,4 +1,4 @@
-import { session } from '../model/model.js';
+import { session } from '../models/model.js';
 
 class LogoutView {
   logoutBtn = document.querySelector('#logout')!;
