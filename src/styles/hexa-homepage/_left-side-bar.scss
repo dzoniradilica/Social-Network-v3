@@ -54,3 +54,14 @@
     min-height: 55vh;
   }
 }
+
+.delete-profile-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+#deleteProfile {
+  color: red !important;
+}
