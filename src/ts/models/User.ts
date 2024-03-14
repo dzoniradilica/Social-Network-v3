@@ -1,3 +1,4 @@
+import { fetchData, API_URL_USERS } from '../helpers/helpers.js';
 import { session } from './Session.js';
 import { ConfigUser, UsersState } from '../configs/user-config';
 
@@ -22,16 +23,7 @@ class User {
         password: password,
       };
 
-      const res = await fetch(
-        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(sendData),
-        }
-      );
+      const res = await fetchData('api-data', API_URL_USERS, 'POST', sendData);
 
       let data = await res.json();
 
@@ -49,9 +41,7 @@ class User {
 
   async getAll() {
     try {
-      const res = await fetch(
-        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users`
-      );
+      const res = await fetchData('api', API_URL_USERS);
       const data = await res.json();
 
       stateUsers.users.push(data);
@@ -62,11 +52,9 @@ class User {
     }
   }
 
-  async get(userId: string | number = 1) {
+  async get(userId: string | number) {
     try {
-      const res = await fetch(
-        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users/${userId}`
-      );
+      const res = await fetchData(`api`, `${API_URL_USERS}/${userId}`);
       const data = await res.json();
 
       return data;
@@ -120,12 +108,7 @@ class User {
 
   async delete(userId: string | number) {
     try {
-      await fetch(
-        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users/${userId}`,
-        {
-          method: 'DELETE',
-        }
-      );
+      await fetchData('api-data', `${API_URL_USERS}/${userId}`, 'DELETE');
     } catch (err) {
       console.log(err);
     }
