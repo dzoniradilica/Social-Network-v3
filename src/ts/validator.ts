@@ -39,6 +39,8 @@ class Validator {
 
     this.errors[fieldName] = [];
 
+    console.log(this.configEl[fieldName].required);
+
     if (this.configEl[fieldName].required && fieldValue.length === 0)
       this.errors[fieldName].push('Field is required!');
 

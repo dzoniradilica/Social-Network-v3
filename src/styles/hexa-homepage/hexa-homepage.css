@@ -90,7 +90,7 @@ header .person-photo img {
   background-color: #1f2124;
   border-radius: 5px;
   width: 75%;
-  min-height: 55vh;
+  min-height: 43vh;
 }
 
 .delete-profile-btn {
@@ -124,7 +124,7 @@ section .idk3 {
   background-color: #1f2124;
   border-radius: 5px;
   width: 75%;
-  min-height: 45vh;
+  min-height: 35vh;
 }
 
 section .post-wrapper {
@@ -152,7 +152,7 @@ section .post-wrapper .post-btn span {
 }
 
 .custom-modal {
-  position: none; /* Sit on top of the page content */
+  position: absolute; /* Sit on top of the page content */
   display: none;
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */

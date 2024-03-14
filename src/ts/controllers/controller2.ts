@@ -1,8 +1,8 @@
 import { session } from '../models/Session.js';
 import { user } from '../models/User.js';
-import { logoutView } from '../views/homepageViews/logoutView.js';
-import { changeView } from '../views/homepageViews/changeFormView.js';
+import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
+import { changeView } from '../views/homepageViews/changeView.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
@@ -18,20 +18,34 @@ const controlProfileView = async function () {
   }
 };
 
-const controlLogoutAndChange = function () {
+const controlLogin = function () {
   session.delete(document.cookie.split('=')[0]);
 
   window.location.href = '../../../hexa-login-register.html';
 };
 
-const controlChangeProfile = function () {
-  console.log(changeView);
+const controlChangeProfile = async function (userData: [string, string]) {
+  const [email, username] = userData;
+
+  await user.change(session.sessionId, username, email);
+
+  location.reload();
+};
+
+const controlDeleteProfile = async function () {
+  await user.delete(session.sessionId);
+  await session.delete(document.cookie.split('=')[0]);
+
+  window.location.href = '../../../hexa-login-register.html';
 };
 
 const init = function () {
   controlProfileView();
-  logoutView.addHandlerDeleteSession(controlLogoutAndChange);
-  controlChangeProfile();
+  logoutDeleteView.addHandlerDeleteSession(controlLogin);
+  logoutDeleteView.addHandlerDelete(controlDeleteProfile);
+  changeView.addHandlerChange(controlChangeProfile);
 };
 
 init();
+
+// console.log('radi');

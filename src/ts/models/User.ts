@@ -98,9 +98,37 @@ class User {
     }
   }
 
-  async change() {
+  async change(userId: string | number, username: string, email: string) {
     try {
+      const sendData = {
+        username: username,
+        email: email,
+      };
+
+      await fetch(
+        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users/${userId}`,
+        {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(sendData),
+        }
+      );
     } catch (err) {}
+  }
+
+  async delete(userId: string | number) {
+    try {
+      await fetch(
+        `https://65d7959727d9a3bc1d7b607e.mockapi.io/users/${userId}`,
+        {
+          method: 'DELETE',
+        }
+      );
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
 
