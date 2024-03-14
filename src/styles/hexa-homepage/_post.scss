@@ -12,16 +12,67 @@ section {
       outline: none;
       color: $textColor;
     }
+  }
 
-    .post-btn {
-      text-align: right;
+  .post-btn {
+    text-align: right;
 
-      span {
-        padding: 6px 15px;
-        border: 1px solid $btnAndHovers;
-        border-radius: 15px;
+    span {
+      padding: 6px 15px;
+      border: 1px solid $btnAndHovers;
+      border-radius: 15px;
+      color: $textColor;
+      cursor: pointer;
+    }
+  }
+
+  .post {
+    background-color: #1f2124;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+
+    .person-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 35px;
+    }
+
+    div {
+      margin-left: 20px;
+      margin-right: 20px;
+
+      h3 {
         color: $textColor;
-        cursor: pointer;
+      }
+
+      p {
+        color: $textColor;
+      }
+    }
+
+    .post-content {
+      margin-top: 20px;
+      p {
+        font-size: 20px;
+        color: $textColor;
+      }
+    }
+
+    .like-comments-wrapper {
+      text-align: right;
+      padding-bottom: 10px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
       }
     }
   }
