@@ -1,15 +1,11 @@
-import { session } from '../models/model.js';
-
 class LogoutView {
   logoutBtn = document.querySelector('#logout')!;
 
-  destroySession() {
+  addHandlerDeleteSession(hadnler: Function) {
     this.logoutBtn.addEventListener('click', e => {
       e.preventDefault();
 
-      session.delete(document.cookie.split('=')[0]);
-
-      window.location.href = '../../../hexa-login-register.html';
+      hadnler();
     });
   }
 }

@@ -11,7 +11,7 @@ class LoginView {
         document.querySelector('#loginPassword')! as HTMLInputElement
       ).value;
 
-      handler(email, password);
+      handler([email, password]);
     });
   }
 }

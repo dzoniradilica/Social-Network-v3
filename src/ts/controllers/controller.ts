@@ -1,8 +1,8 @@
-import { validator } from '../validator.js';
-import { registrationView } from '../views/registrationView.js';
+import { validator } from '../Validator.js';
+import { registrationView } from '../views/logRegViews/registrationView.js';
 import { user } from '../models/User.js';
 import { session } from '../models/Session.js';
-import { loginView } from '../views/loginFormView.js';
+import { loginView } from '../views/logRegViews/loginFormView.js';
 
 if (session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-homepage.html';

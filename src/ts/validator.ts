@@ -1,5 +1,5 @@
-import { ConfigElements } from './configs/config-validation';
-import { configEl } from './configs/config-validation';
+import { ConfigElements } from './configs/config-validation.js';
+import { configEl } from './configs/config-validation.js';
 
 interface errorsBag {
   [prop: string]: string[];

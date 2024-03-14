@@ -1,4 +1,9 @@
 class ChangeView {
+  constructor() {
+    this.openAndCloseModal('#changeModal', 'block');
+    this.openAndCloseModal('#closeModal', 'none');
+  }
+
   openAndCloseModal(btnModalId: string, display: string) {
     const btnModal = document.querySelector(btnModalId)! as HTMLButtonElement;
 

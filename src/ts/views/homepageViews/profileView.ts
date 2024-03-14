@@ -1,4 +1,4 @@
-import { ConfigUser } from '../configs/user-config.js';
+import { ConfigUser } from '../../configs/user-config.js';
 
 class ProfileView {
   username = document.querySelector('.profile-username')!;

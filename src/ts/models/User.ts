@@ -1,4 +1,4 @@
-import { session } from './Session';
+import { session } from './Session.js';
 import { ConfigUser, UsersState } from '../configs/user-config';
 
 export const stateUser = {
