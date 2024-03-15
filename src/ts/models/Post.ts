@@ -17,8 +17,6 @@ class Post {
       const res = await fetchData('api-data', API_URL_POSTS, 'POST', sendData);
       const data = await res.json();
 
-      console.log(data);
-
       return data;
     } catch (err) {
       console.log(err);

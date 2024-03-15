@@ -1,6 +1,8 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigPost } from '../../configs/post-config';
 import { post } from '../../models/Post.js';
+import { comment } from '../../models/Comment.js';
+import { session } from '../../models/Session.js';
 
 class AddPostView {
   private addPost = document.querySelector('#addPost')!;
@@ -96,8 +98,6 @@ class AddPostView {
         '.post'
       ) as HTMLDivElement;
 
-      console.log(parentEl);
-
       let html = `
       <hr style="margin-top: 0; margin-bottom: 0" />
 
@@ -114,6 +114,50 @@ class AddPostView {
      `;
 
       parentEl.insertAdjacentHTML('beforeend', html);
+
+      this.renderComment('#commentText', '#addComment');
+    });
+  }
+
+  renderComment(_: string, buttonId: string) {
+    const addCommentBtns = document.querySelectorAll(`${buttonId}`)!;
+
+    addCommentBtns.forEach(commentBtn => {
+      commentBtn.addEventListener('click', e => {
+        const commentContent = (e.target! as HTMLButtonElement)
+          .previousElementSibling as HTMLInputElement;
+
+        const parentEl = (e.target! as HTMLButtonElement).closest(
+          '.post'
+        ) as HTMLDivElement;
+
+        const commentWrapper = (e.target! as HTMLButtonElement).closest(
+          '.comment-wrapper'
+        ) as HTMLDivElement;
+
+        const html = `
+          <div class="comment">
+            <p>${commentContent.value}</p>
+          </div> 
+        `;
+
+        if (commentContent.value !== '') {
+          commentWrapper.insertAdjacentHTML('beforeend', html);
+          commentContent.value = '';
+
+          const postId = +parentEl.dataset.post_id!;
+
+          const createComment = async function () {
+            await comment.create(
+              session.sessionId,
+              postId,
+              commentContent.value
+            );
+          };
+
+          createComment();
+        } else alert('You have to write comment!');
+      });
     });
   }
 
