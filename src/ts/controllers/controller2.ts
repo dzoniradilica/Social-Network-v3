@@ -1,11 +1,13 @@
 import { session } from '../models/Session.js';
 import { user } from '../models/User.js';
 import { post } from '../models/Post.js';
+import { comment } from '../models/Comment.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
 import { changeView } from '../views/homepageViews/changeView.js';
 import { addPostView } from '../views/homepageViews/addPostView.js';
+import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
@@ -50,7 +52,7 @@ const controlDeleteProfile = async function () {
   }
 };
 
-const controlAddRecipe = async function (postContent: string) {
+const controlAddPost = async function (postContent: string) {
   try {
     const userData = await user.get(session.sessionId);
     const postData = await post.create(
@@ -76,13 +78,24 @@ const controlDisplayPosts = async function () {
   }
 };
 
+const controlDisplayComments = async function () {
+  try {
+    const allComments = await comment.getAll();
+
+    displayAllComments.renderAllComments(allComments);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 const init = function () {
   controlProfileView();
   controlDisplayPosts();
+  controlDisplayComments();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
-  addPostView.addPostHandler(controlAddRecipe);
+  addPostView.addPostHandler(controlAddPost);
 };
 
 init();

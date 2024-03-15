@@ -28,6 +28,17 @@ class Comment {
       console.log(err);
     }
   }
+
+  async getAll() {
+    try {
+      const res = await fetchData('api', API_URL_COMMENTS);
+      const data = await res.json();
+
+      return data;
+    } catch (err) {
+      console.log(err);
+    }
+  }
 }
 
 export const comment = new Comment();

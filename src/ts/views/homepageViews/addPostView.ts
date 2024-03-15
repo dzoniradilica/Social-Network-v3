@@ -43,7 +43,7 @@ class AddPostView {
     type: 'post' | 'posts',
     singlePost: ConfigPost,
     userData: ConfigUser
-  ): any {
+  ) {
     const html = `
           <div class="post" data-post_id = "${singlePost.id}">
               <div class="person-info">
@@ -67,7 +67,7 @@ class AddPostView {
       singlePost.likes
     }</span>
                   <button class="like-btn"> <img src="images/like.png" alt="like" class="like-image" />
-                  <button class="comment-btn"><img src="images/comment (1).png" alt="comment" /></button>
+                  <button class="comment-btn"><img src="images/comment (1).png" alt="comment" class="comment-image" /></button>
 
                   ${
                     type === 'post'
@@ -79,7 +79,9 @@ class AddPostView {
               </div>
           </div>
 
-          
+          <div class="comment-parent">
+            <div class="comment-wrapper"></div>
+          </div>
           `;
     this.parentElement.insertAdjacentHTML('afterbegin', html);
 
@@ -115,11 +117,19 @@ class AddPostView {
 
       parentEl.insertAdjacentHTML('beforeend', html);
 
+      const img = (e.target! as HTMLButtonElement)
+        .closest('.like-comments-wrapper')
+        ?.querySelector('.comment-image') as HTMLImageElement;
+
+      commentBtn.setAttribute('disabled', 'disabled');
+      commentBtn.style.cursor = 'default';
+      img.style.cursor = 'default';
+
       this.renderComment('#commentText', '#addComment');
     });
   }
 
-  renderComment(_: string, buttonId: string) {
+  private renderComment(_: string, buttonId: string) {
     const addCommentBtns = document.querySelectorAll(`${buttonId}`)!;
 
     addCommentBtns.forEach(commentBtn => {
@@ -143,7 +153,6 @@ class AddPostView {
 
         if (commentContent.value !== '') {
           commentWrapper.insertAdjacentHTML('beforeend', html);
-          commentContent.value = '';
 
           const postId = +parentEl.dataset.post_id!;
 
@@ -156,6 +165,7 @@ class AddPostView {
           };
 
           createComment();
+          commentContent.value = '';
         } else alert('You have to write comment!');
       });
     });
@@ -177,6 +187,7 @@ class AddPostView {
         const span = (e.target! as HTMLButtonElement).closest(
           '.like-comments-wrapper'
         )?.firstElementChild as HTMLSpanElement;
+
         const img = (e.target! as HTMLButtonElement)
           .closest('.like-comments-wrapper')
           ?.querySelector('.like-image') as HTMLImageElement;
