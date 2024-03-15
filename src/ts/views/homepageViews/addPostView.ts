@@ -61,8 +61,10 @@ class AddPostView {
               </div>
 
               <div class="like-comments-wrapper">
-                  <span id="likes">${singlePost.likes}</span>
-                  <img src="images/heart.png" alt="like" class="heart" />
+                  <span id="likes" data-likes="${singlePost.likes}">${
+      singlePost.likes
+    }</span>
+                  <button class="like-btn"> <img src="images/like.png" alt="like" class="like-image" /></button>
                   <img src="images/comment (1).png" alt="comment" />
 
                   ${
@@ -77,10 +79,45 @@ class AddPostView {
           `;
     this.parentElement.insertAdjacentHTML('afterbegin', html);
 
-    this.addDeleteHandler('#deletePost');
+    this.addLikesHandler('.like-btn');
+    this.deletePost('#deletePost');
   }
 
-  private async addDeleteHandler(deleteBtnId: string) {
+  addLikesHandler(likeBtnClass: string) {
+    const likeBtn = document.querySelector(
+      `${likeBtnClass}`
+    ) as HTMLImageElement;
+
+    likeBtn?.addEventListener('click', e => {
+      async function getPostData() {
+        const postDiv = (e.target! as HTMLImageElement).closest(
+          '.post'
+        )! as HTMLDivElement;
+        const postId = +postDiv.dataset.post_id!;
+        const postData: ConfigPost = await post.get(postId);
+
+        const span = (e.target! as HTMLButtonElement).closest(
+          '.like-comments-wrapper'
+        )?.firstElementChild as HTMLSpanElement;
+        const img = (e.target! as HTMLButtonElement)
+          .closest('.like-comments-wrapper')
+          ?.querySelector('.like-image') as HTMLImageElement;
+
+        postData.likes++;
+        span.innerText = `${postData.likes}`;
+
+        post.change(postId, postData.likes);
+
+        likeBtn.setAttribute('disabled', 'disabled');
+        likeBtn.style.cursor = 'default';
+        img.style.cursor = 'default';
+      }
+
+      getPostData();
+    });
+  }
+
+  private async deletePost(deleteBtnId: string) {
     const deleteBtn = document.querySelector(
       `${deleteBtnId}`
     ) as HTMLButtonElement;

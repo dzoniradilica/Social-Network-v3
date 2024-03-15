@@ -28,36 +28,52 @@ const controlLogin = function () {
 };
 
 const controlChangeProfile = async function (userData: [string, string]) {
-  const [email, username] = userData;
+  try {
+    const [email, username] = userData;
 
-  await user.change(session.sessionId, username, email);
+    await user.change(session.sessionId, username, email);
 
-  location.reload();
+    location.reload();
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const controlDeleteProfile = async function () {
-  await user.delete(session.sessionId);
-  await session.delete(document.cookie.split('=')[0]);
+  try {
+    await user.delete(session.sessionId);
+    await session.delete(document.cookie.split('=')[0]);
 
-  window.location.href = '../../../hexa-login-register.html';
+    window.location.href = '../../../hexa-login-register.html';
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const controlAddRecipe = async function (postContent: string) {
-  const userData = await user.get(session.sessionId);
-  const postData = await post.create(
-    +session.sessionId,
-    postContent,
-    userData.username
-  );
+  try {
+    const userData = await user.get(session.sessionId);
+    const postData = await post.create(
+      +session.sessionId,
+      postContent,
+      userData.username
+    );
 
-  addPostView.createPost(postData, userData);
+    addPostView.createPost(postData, userData);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const controlDisplayPosts = async function () {
-  const allPosts = await post.getAll();
-  const singleUser = await user.get(session.sessionId);
+  try {
+    const allPosts = await post.getAll();
+    const singleUser = await user.get(session.sessionId);
 
-  addPostView.displayAllPosts(allPosts, singleUser);
+    addPostView.displayAllPosts(allPosts, singleUser);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const init = function () {

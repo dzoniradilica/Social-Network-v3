@@ -4,4 +4,5 @@ export interface ConfigPost {
   content: string;
   likes: number;
   author: string;
+  liked: boolean;
 }
