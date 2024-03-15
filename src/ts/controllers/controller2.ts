@@ -43,19 +43,21 @@ const controlDeleteProfile = async function () {
 };
 
 const controlAddRecipe = async function (postContent: string) {
-  const postData = await post.create(+session.sessionId, postContent);
   const userData = await user.get(session.sessionId);
+  const postData = await post.create(
+    +session.sessionId,
+    postContent,
+    userData.username
+  );
 
   addPostView.createPost(postData, userData);
 };
 
 const controlDisplayPosts = async function () {
   const allPosts = await post.getAll();
-  const allUsers: [] = await user.getAll();
+  const singleUser = await user.get(session.sessionId);
 
-  allUsers.forEach(singleUser =>
-    addPostView.displayAllPosts(allPosts, singleUser)
-  );
+  addPostView.displayAllPosts(allPosts, singleUser);
 };
 
 const init = function () {

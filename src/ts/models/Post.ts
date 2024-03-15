@@ -4,15 +4,18 @@ export const postState = {};
 export const postsState = [];
 
 class Post {
-  async create(userId: string | number, content: string) {
+  async create(userId: string | number, content: string, author: string) {
     const sendData = {
       userId: userId,
       content: content,
       likes: 0,
+      author: author,
     };
 
     const res = await fetchData('api-data', API_URL_POSTS, 'POST', sendData);
     const data = await res.json();
+
+    console.log(data);
 
     return data;
   }

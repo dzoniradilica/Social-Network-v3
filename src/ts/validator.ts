@@ -1,5 +1,7 @@
 import { ConfigElements } from './configs/config-validation.js';
 import { configEl } from './configs/config-validation.js';
+import { user } from './models/User.js';
+import { ConfigUser } from './configs/user-config.js';
 
 interface errorsBag {
   [prop: string]: string[];
@@ -69,6 +71,16 @@ class Validator {
         this.errors[fieldName] = [];
         this.errors[matchingEl.name] = [];
       }
+
+      const getUsers = async function () {
+        const allUsers: ConfigUser[] = await user.getAll();
+
+        allUsers.forEach(singleUser => {
+          console.log(singleUser);
+        });
+      };
+
+      getUsers();
     }
 
     this.renderErrors(e);

@@ -48,20 +48,16 @@ class AddPostView {
     (document.querySelector('#addPostContent')! as HTMLInputElement).value = '';
   }
 
-  displayAllPosts(postData: ConfigPost[], userData: ConfigUser) {
+  displayAllPosts(postData: ConfigPost[], singleUser: ConfigUser) {
     this.parentElement.innerHTML = '';
-
     postData.forEach(singlePost => {
       const html = `
         <div class="post">
             <div class="person-info">
                 <img src="images/person.png" alt="person" />
                 <div>
-                    <h3 class="author">${
-                      +singlePost.userId === +userData.id
-                        ? userData.username
-                        : ''
-                    }</h3>
+                
+                    <h3 class="author">${singlePost.author}</h3>
                     <p class="date">2 days ago</p>
                 </div>
             </div>
@@ -76,16 +72,60 @@ class AddPostView {
                 <img src="images/comment (1).png" alt="comment" />
     
                 ${
-                  +singlePost.userId === +userData.id
+                  singleUser.username === singlePost.author
                     ? '<button id="deletePost">Delete</button>'
                     : ''
                 }
             </div>
         </div>
         `;
+
       this.parentElement.insertAdjacentHTML('afterbegin', html);
+      //   this.parentElement.innerHTML = '';
     });
   }
+
+  //   private renderPost(
+  //     type: 'post' | 'posts',
+  //     singlePost: ConfigPost,
+  //     userData: ConfigUser
+  //   ) {
+  //     const html = `
+  //         <div class="post">
+  //             <div class="person-info">
+  //                 <img src="images/person.png" alt="person" />
+  //                 <div>
+  //                     <h3 class="author">${
+  //                       type === 'post'
+  //                         ? `<h3 class="author">${userData.username}</h3>`
+  //                         : +singlePost.userId === +userData.id
+  //                         ? userData.username
+  //                         : ''
+  //                     }</h3>
+  //                     <p class="date">2 days ago</p>
+  //                 </div>
+  //             </div>
+
+  //             <div class="post-content">
+  //                 <p>${singlePost.content}</p>
+  //             </div>
+
+  //             <div class="like-comments-wrapper">
+  //                 <span id="likes">${singlePost.likes}</span>
+  //                 <img src="images/heart.png" alt="like" class="heart" />
+  //                 <img src="images/comment (1).png" alt="comment" />
+
+  //                 ${
+  //                     type === 'post' ? `<button id="deletePost">Delete</button>` :
+  //                   +singlePost.userId === +userData.id
+  //                     ? '<button id="deletePost">Delete</button>'
+  //                     : ''
+  //                 }
+  //             </div>
+  //         </div>
+  //         `;
+  //         this.parentElement.insertAdjacentHTML('afterbegin', html)
+  //   }
 }
 
 export const addPostView = new AddPostView();
