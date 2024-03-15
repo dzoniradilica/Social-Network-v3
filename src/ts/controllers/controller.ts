@@ -12,7 +12,12 @@ const controlRegistrationForm = async function (userData: string[]) {
   try {
     const [username, email, password] = userData;
 
-    if (validator.validationPassed()) {
+    if (
+      validator.validationPassed() &&
+      username !== '' &&
+      email !== '' &&
+      password !== ''
+    ) {
       const data = await user.create(email, username, password);
 
       session.create(data.id);

@@ -34,14 +34,12 @@ class Validator {
     return true;
   }
 
-  private addHandlerInput(e: Event) {
+  addHandlerInput(e: Event) {
     const currentField = e.target! as HTMLInputElement;
     const fieldName = currentField.name;
     const fieldValue = currentField.value;
 
     this.errors[fieldName] = [];
-
-    console.log(this.configEl[fieldName].required);
 
     if (this.configEl[fieldName].required && fieldValue.length === 0)
       this.errors[fieldName].push('Field is required!');
@@ -71,17 +69,23 @@ class Validator {
         this.errors[fieldName] = [];
         this.errors[matchingEl.name] = [];
       }
-
-      const getUsers = async function () {
-        const allUsers: ConfigUser[] = await user.getAll();
-
-        allUsers.forEach(singleUser => {
-          console.log(singleUser);
-        });
-      };
-
-      getUsers();
     }
+
+    this.renderErrors(e);
+  }
+
+  private async getUsers(e: Event) {
+    const currentField = e.target! as HTMLInputElement;
+    const fieldName = currentField.name;
+    const fieldValue = currentField.value;
+    const allUsers: ConfigUser[] = await user.getAll();
+
+    const result = allUsers.some(
+      singleUser => singleUser.username === fieldValue
+    );
+
+    if (this.configEl[fieldName].existUsername && result)
+      this.errors[fieldName].push('This username exist!');
 
     this.renderErrors(e);
   }
@@ -109,6 +113,7 @@ class Validator {
     const allInputs = document.querySelectorAll(`${this.formId} input`)!;
 
     allInputs.forEach(input => {
+      input.addEventListener('input', this.getUsers.bind(this));
       input.addEventListener('input', this.addHandlerInput.bind(this));
     });
   }

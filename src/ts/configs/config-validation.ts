@@ -5,6 +5,7 @@ export interface ConfigElements {
     minLength: number;
     email?: boolean;
     matching?: string;
+    existUsername?: boolean;
   };
 }
 
@@ -13,6 +14,7 @@ export const configEl: ConfigElements = {
     required: true,
     maxLength: 10,
     minLength: 5,
+    existUsername: true,
   },
 
   registrationEmail: {
