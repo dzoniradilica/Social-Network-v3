@@ -1,0 +1,48 @@
+section {
+  .posts-parent-element {
+    .comment-parent {
+      .comment-wrapper {
+        background-color: #1f2124;
+        border-radius: 5px;
+        padding: 20px;
+        label {
+          font-size: 20px;
+          color: $textColor;
+        }
+        .comment-inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          input {
+            width: 75%;
+            background-color: transparent;
+            outline: none;
+            border: 1px solid $textColor;
+            color: $textColor;
+          }
+
+          button {
+            background-color: transparent;
+            padding: 5px 10px;
+            border: 1px solid #ffd37d;
+            border-radius: 15px;
+            color: #d9e4ed;
+            cursor: pointer;
+          }
+        }
+
+        .comment {
+          text-align: center;
+          margin-top: 20px;
+          border: 1px solid white;
+          padding: 5px;
+
+          p {
+            color: $textColor;
+          }
+        }
+      }
+    }
+  }
+}

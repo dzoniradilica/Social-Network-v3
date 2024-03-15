@@ -1,11 +1,11 @@
 import { session } from '../models/Session.js';
 import { user } from '../models/User.js';
-import { post } from '../models/Post.js';
+// import { post } from '../models/Post.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
 import { changeView } from '../views/homepageViews/changeView.js';
-import { addPostView } from '../views/homepageViews/addPostView.js';
+// import { addPostView } from '../views/homepageViews/addPostView.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
@@ -50,39 +50,39 @@ const controlDeleteProfile = async function () {
   }
 };
 
-const controlAddRecipe = async function (postContent: string) {
-  try {
-    const userData = await user.get(session.sessionId);
-    const postData = await post.create(
-      +session.sessionId,
-      postContent,
-      userData.username
-    );
+// const controlAddRecipe = async function (postContent: string) {
+//   try {
+//     const userData = await user.get(session.sessionId);
+//     const postData = await post.create(
+//       +session.sessionId,
+//       postContent,
+//       userData.username
+//     );
 
-    addPostView.createPost(postData, userData);
-  } catch (err) {
-    console.log(err);
-  }
-};
+//     addPostView.createPost(postData, userData);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
-const controlDisplayPosts = async function () {
-  try {
-    const allPosts = await post.getAll();
-    const singleUser = await user.get(session.sessionId);
+// const controlDisplayPosts = async function () {
+//   try {
+//     const allPosts = await post.getAll();
+//     const singleUser = await user.get(session.sessionId);
 
-    addPostView.displayAllPosts(allPosts, singleUser);
-  } catch (err) {
-    console.log(err);
-  }
-};
+//     addPostView.displayAllPosts(allPosts, singleUser);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
 const init = function () {
   controlProfileView();
-  controlDisplayPosts();
+  // controlDisplayPosts();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
-  addPostView.addPostHandler(controlAddRecipe);
+  // addPostView.addPostHandler(controlAddRecipe);
 };
 
 init();
