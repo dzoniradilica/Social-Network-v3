@@ -185,13 +185,31 @@ section .post .post-content p {
   color: #d9e4ed;
 }
 section .post .like-comments-wrapper {
-  text-align: right;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+section .post .like-comments-wrapper span {
+  font-size: 20px;
+  color: #d9e4ed;
+}
+section .post .like-comments-wrapper .heart {
+  margin-left: 20px;
 }
 section .post .like-comments-wrapper img {
   width: 24px;
   height: 24px;
+  margin-right: 5px;
+  margin-left: 30px;
+}
+section .post .like-comments-wrapper #deletePost {
   margin-left: 20px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: red;
+  font-size: 18px;
 }
 
 .custom-modal {

@@ -1,6 +1,6 @@
-interface ConfigPost {
+export interface ConfigPost {
   id: string;
-  post_id: number;
+  userId: number;
   content: string;
   likes: number;
 }

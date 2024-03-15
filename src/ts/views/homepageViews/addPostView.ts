@@ -1,6 +1,11 @@
+import { ConfigUser } from '../../configs/user-config';
+import { ConfigPost } from '../../configs/post-config';
+
 class AddPostView {
   private addPost = document.querySelector('#addPost')!;
-  //   private parentElement = document.querySelector('.posts-parent-element');
+  private parentElement = document.querySelector(
+    '.posts-parent-element'
+  )! as HTMLDivElement;
 
   addPostHandler(handler: Function) {
     this.addPost.addEventListener('click', e => {
@@ -14,28 +19,72 @@ class AddPostView {
     });
   }
 
-  createPost() {
+  createPost(postData: ConfigPost, userData: ConfigUser) {
     const html = `
     <div class="post">
         <div class="person-info">
             <img src="images/person.png" alt="person" />
             <div>
-                <h3 class="author">Nikola</h3>
+                <h3 class="author">${userData.username}</h3>
                 <p class="date">2 days ago</p>
             </div>
         </div>
 
         <div class="post-content">
-            <p>This is some post about something</p>
+            <p>${postData.content}</p>
         </div>
 
         <div class="like-comments-wrapper">
-            <img src="images/heart.png" alt="like" />
+            <span id="likes">${postData.likes}</span>
+            <img src="images/heart.png" alt="like" class="heart" />
             <img src="images/comment (1).png" alt="comment" />
+
+            <button id="deletePost">Delete</button>
         </div>
     </div>
     `;
-    console.log(html);
+
+    this.parentElement.insertAdjacentHTML('afterbegin', html);
+    (document.querySelector('#addPostContent')! as HTMLInputElement).value = '';
+  }
+
+  displayAllPosts(postData: ConfigPost[], userData: ConfigUser) {
+    this.parentElement.innerHTML = '';
+
+    postData.forEach(singlePost => {
+      const html = `
+        <div class="post">
+            <div class="person-info">
+                <img src="images/person.png" alt="person" />
+                <div>
+                    <h3 class="author">${
+                      +singlePost.userId === +userData.id
+                        ? userData.username
+                        : ''
+                    }</h3>
+                    <p class="date">2 days ago</p>
+                </div>
+            </div>
+    
+            <div class="post-content">
+                <p>${singlePost.content}</p>
+            </div>
+    
+            <div class="like-comments-wrapper">
+                <span id="likes">${singlePost.likes}</span>
+                <img src="images/heart.png" alt="like" class="heart" />
+                <img src="images/comment (1).png" alt="comment" />
+    
+                ${
+                  +singlePost.userId === +userData.id
+                    ? '<button id="deletePost">Delete</button>'
+                    : ''
+                }
+            </div>
+        </div>
+        `;
+      this.parentElement.insertAdjacentHTML('afterbegin', html);
+    });
   }
 }
 

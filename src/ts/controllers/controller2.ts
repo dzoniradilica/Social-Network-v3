@@ -49,8 +49,18 @@ const controlAddRecipe = async function (postContent: string) {
   addPostView.createPost(postData, userData);
 };
 
+const controlDisplayPosts = async function () {
+  const allPosts = await post.getAll();
+  const allUsers: [] = await user.getAll();
+
+  allUsers.forEach(singleUser =>
+    addPostView.displayAllPosts(allPosts, singleUser)
+  );
+};
+
 const init = function () {
   controlProfileView();
+  controlDisplayPosts();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
