@@ -26,6 +26,10 @@ class Post {
 
     return data;
   }
+
+  async delete(postId: string | number) {
+    await fetchData('api-data', `${API_URL_POSTS}/${postId}`, 'DELETE');
+  }
 }
 
 export const post = new Post();

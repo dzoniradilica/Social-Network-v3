@@ -1,5 +1,6 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigPost } from '../../configs/post-config';
+import { post } from '../../models/Post.js';
 
 class AddPostView {
   private addPost = document.querySelector('#addPost')!;
@@ -40,9 +41,9 @@ class AddPostView {
     type: 'post' | 'posts',
     singlePost: ConfigPost,
     userData: ConfigUser
-  ) {
+  ): any {
     const html = `
-          <div class="post">
+          <div class="post" data-post_id = "${singlePost.id}">
               <div class="person-info">
                   <img src="images/person.png" alt="person" />
                   <div>
@@ -75,6 +76,29 @@ class AddPostView {
           </div>
           `;
     this.parentElement.insertAdjacentHTML('afterbegin', html);
+
+    this.addDeleteHandler('#deletePost');
+  }
+
+  private async addDeleteHandler(deleteBtnId: string) {
+    const deleteBtn = document.querySelector(
+      `${deleteBtnId}`
+    ) as HTMLButtonElement;
+
+    deleteBtn?.addEventListener('click', e => {
+      e.preventDefault();
+
+      const postDiv = (e.target! as HTMLButtonElement).closest(
+        '.post'
+      )! as HTMLDivElement;
+      const postId = +postDiv.dataset.post_id!;
+
+      setTimeout(() => {
+        postDiv.remove();
+
+        post.delete(postId);
+      }, 1000);
+    });
   }
 }
 
