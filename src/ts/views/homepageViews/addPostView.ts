@@ -1,6 +1,6 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigPost } from '../../configs/post-config';
-import { ConfigComment } from '../../configs/comment-config';
+// import { ConfigComment } from '../../configs/comment-config';
 
 import { post } from '../../models/Post.js';
 import { comment } from '../../models/Comment.js';
@@ -9,7 +9,7 @@ import { session } from '../../models/Session.js';
 class AddPostView {
   private addPost = document.querySelector('#addPost')!;
   private parentElement = document.querySelector(
-    '.posts-parent-element'
+    '.all-posts'
   )! as HTMLDivElement;
 
   addPostHandler(handler: Function) {
@@ -47,6 +47,7 @@ class AddPostView {
     userData: ConfigUser
   ) {
     const html = `
+    <div class="posts-parent-element">
           <div class="post" data-post_id = "${singlePost.id}">
               <div class="person-info">
                   <img src="images/person.png" alt="person" />
@@ -84,6 +85,7 @@ class AddPostView {
           <div class="comment-parent">
             <div class="comment-wrapper"></div>
           </div>
+    </div>
           `;
     this.parentElement.insertAdjacentHTML('afterbegin', html);
 
@@ -131,44 +133,49 @@ class AddPostView {
     });
   }
 
-  private renderComment(_: string, buttonId: string) {
+  renderComment(_: string, buttonId: string) {
     const addCommentBtns = document.querySelectorAll(`${buttonId}`)!;
 
     addCommentBtns.forEach(commentBtn => {
       commentBtn.addEventListener('click', e => {
-        const commentContent = (e.target! as HTMLButtonElement)
-          .previousElementSibling as HTMLInputElement;
+        const idk = async function () {
+          const commentContent = (e.target! as HTMLButtonElement)
+            .previousElementSibling as HTMLInputElement;
 
-        const parentEl = (e.target! as HTMLButtonElement).closest(
-          '.post'
-        ) as HTMLDivElement;
+          const parentEl = (e.target! as HTMLButtonElement).closest(
+            '.post'
+          ) as HTMLDivElement;
 
-        const commentWrapper = (e.target! as HTMLButtonElement).closest(
-          '.comment-wrapper'
-        ) as HTMLDivElement;
+          const commentWrapper = (e.target! as HTMLButtonElement).closest(
+            '.comment-wrapper'
+          ) as HTMLDivElement;
 
-        if (commentContent.value !== '') {
-          const postId = +parentEl.dataset.post_id!;
+          if (commentContent.value !== '') {
+            console.log(commentContent);
 
-          const createComment = async function () {
-            const singleComment: ConfigComment = await comment.create(
-              session.sessionId,
-              postId,
-              commentContent.value
-            );
+            const postId = +parentEl.dataset.post_id!;
 
-            const html = `
-              <div class="comment" data-comment_id="${singleComment.id}>
+            const createComment = async function () {
+              const singleComment = await comment.create(
+                session.sessionId,
+                postId,
+                commentContent.value
+              );
+
+              return `
+              <div class="comment" data-comment_id="${singleComment.id}">
                 <p>${commentContent.value}</p>
               </div> 
         `;
+            };
 
+            let html = await createComment();
             commentWrapper.insertAdjacentHTML('beforeend', html);
-            // commentContent.value = '';
-          };
+            commentContent.value = '';
+          } else alert('You have to write comment!');
+        };
 
-          createComment();
-        } else alert('You have to write comment!');
+        idk();
       });
     });
   }
@@ -217,34 +224,31 @@ class AddPostView {
       e.preventDefault();
 
       const postDiv = (e.target! as HTMLButtonElement).closest(
+        '.posts-parent-element'
+      )! as HTMLDivElement;
+
+      const divForId = (e.target! as HTMLButtonElement).closest(
         '.post'
       )! as HTMLDivElement;
-      const postId = +postDiv.dataset.post_id!;
+      const postId = +divForId.dataset.post_id!;
 
       setTimeout(() => {
-        const commentParent = document.querySelectorAll(
-          '.comment-wrapper'
-        ) as NodeListOf<HTMLDivElement>;
+        const idk2 = async function () {
+          const commentsDiv = document.querySelectorAll(
+            '.comment'
+          ) as NodeListOf<HTMLDivElement>;
 
-        const commentsDiv = document.querySelectorAll(
-          '.comment'
-        ) as NodeListOf<HTMLDivElement>;
+          commentsDiv.forEach(singleDiv => {
+            const comment_id = +singleDiv.dataset.comment_id!;
+            console.log(comment_id);
 
-        commentsDiv.forEach(singleDiv => {
-          const comment_id = +singleDiv.dataset.comment_id!;
-          console.log(comment_id);
-
-          comment.delete(comment_id, postId);
-          console.log(commentParent);
-
-          commentParent.forEach(el => {
-            if (comment_id === +postId) el.remove();
+            post.delete(postId);
+            comment.delete(comment_id, postId);
+            postDiv.remove();
           });
-        });
+        };
 
-        postDiv.remove();
-
-        post.delete(postId);
+        idk2();
       }, 1100);
     });
   }
