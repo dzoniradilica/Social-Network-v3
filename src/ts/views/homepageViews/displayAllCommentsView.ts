@@ -16,8 +16,6 @@ class DisplayAllComments {
           const post_id = singleDiv.dataset.post_id!;
           const singleCommentDiv = commentDiv[i];
 
-          console.log(singleComment.content);
-
           const html = `
            ${
              +singleComment.post_id === +post_id
@@ -31,7 +29,7 @@ class DisplayAllComments {
           singleCommentDiv.insertAdjacentHTML('beforeend', html);
         });
       });
-    }, 0);
+    }, 1000);
   }
 }
 

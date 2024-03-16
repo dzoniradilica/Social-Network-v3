@@ -39,6 +39,14 @@ class Comment {
       console.log(err);
     }
   }
+
+  async delete(comment_id: string | number, post_id: string | number) {
+    try {
+      console.log(post_id);
+
+      await fetchData('api-data', `${API_URL_COMMENTS}/${comment_id}`);
+    } catch (err) {}
+  }
 }
 
 export const comment = new Comment();
