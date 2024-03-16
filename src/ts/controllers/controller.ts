@@ -4,6 +4,9 @@ import { user } from '../models/User.js';
 import { session } from '../models/Session.js';
 import { loginView } from '../views/logRegViews/loginFormView.js';
 
+import 'core-js/stable';
+import '@modern-js/runtime';
+
 if (session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-homepage.html';
 }
