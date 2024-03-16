@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Simple Social Network",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build": "npx parcel build ./*.html"
   },
   "author": "Nikola",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "parcel": "^2.12.0"
   }
 }
