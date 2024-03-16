@@ -1,4 +1,4 @@
-27405
+27322
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\stylehacks\types\dictionary\tags.d.ts133550735000765622 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\axios\lib\adapters\xhr.js133547321311240024 0
 140C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\src\_get_prototype_of.mjs133550741764245847 0
@@ -7,7 +7,7 @@
 72C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\tail.js133547321346275736 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\css-tree\lib\walker\index.js133550707066334792 0
 68C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\get-intrinsic133550741613535334 1
-46C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist133550746516457717 1
+46C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist133550760426293939 1
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\object\values.js133550742188450935 0
 54C:\Users\ASUS\Desktop\socialNetwork-dzoni\designImages133546786287540220 1
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\colord\plugins\minify.d.ts133550735050120918 0
@@ -42,7 +42,7 @@
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\actual\unescape.js133550742187343881 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\util\hash\md4.js133550741725039752 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\es-module-lexer\types\lexer.d.ts133550741624218390 0
-60C:\Users\ASUS\Desktop\socialNetwork-dzoni\hexa-homepage.html133550746023198461 0
+60C:\Users\ASUS\Desktop\socialNetwork-dzoni\hexa-homepage.html133550760289395533 0
 85C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\styles\hexa-homepage\hexa-homepage.scss133549965354755058 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\string\fixed.js133550742148868678 0
 47C:\Users\ASUS\Desktop\socialNetwork-dzoni\fonts133546813242753386 1
@@ -79,7 +79,7 @@
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\supports-color\readme.md133547321297506211 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\css-tree\dist\data.js133550707064268590 0
 72C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\flatMap.js133547321337807631 0
-66C:\Users\ASUS\Desktop\socialNetwork-dzoni\hexa-login-register.html133550746305136038 0
+66C:\Users\ASUS\Desktop\socialNetwork-dzoni\hexa-login-register.html133550760190443392 0
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss\lib\declaration.js133550735048525722 0
 66C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\ws\index.js133547321299349607 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\sharing\ProvideSharedModuleFactory.js133550741742162055 0
@@ -123,7 +123,7 @@
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\number\constructor.js133550742116070518 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\yargs\locales\pirate.json133547321313015652 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\async\selectSeries.js133547321319671169 0
-54C:\Users\ASUS\Desktop\socialNetwork-dzoni\package.json133550743575795964 0
+54C:\Users\ASUS\Desktop\socialNetwork-dzoni\package.json133550759640760615 0
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\actual\typed-array\from-base64.js133550742150679837 0
 109C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\README.md133550707017946408 0
 106C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\async-iterator\as-indexed-pairs.js133550742110515411 0
@@ -421,7 +421,7 @@
 69C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\ws\wrapper.mjs133547321306687784 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\browser-sync\dist\public\reload.js133547321314485512 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\update-browserslist-db\index.js133550707019605523 0
-74C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\ts\controllers\controller.ts133550742868589191 0
+74C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\ts\controllers\controller.ts133550749528736027 0
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\stable\array\every.js133550742146224032 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@emotion\stylis\types\index.d.ts133550741626693890 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\ts\controllers\controller2.ts133550742757461828 0
@@ -535,7 +535,6 @@
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\styles\hexa-homepage\hexa-homepage.css.map133550192660932616 0
 78C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\moment\src\locale\es.js133547321325504315 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\src\styles\hexa-homepage\_comment.scss133550192658202256 0
-63C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\validator.js.map133550180370916703 0
 74C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\terser\package.json133550741633194316 0
 150C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_class_static_private_field_spec_get.mjs133550741693617626 0
 71C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\cookie-signature133550741632568202 1
@@ -579,7 +578,7 @@
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\xmlhttprequest-ssl\tests\test-redirect-303.js133547321301101219 0
 111C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\csso\node_modules\css-tree\lib\syntax\node\WhiteSpace.js133550707068186409 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\toString.js133547321346994054 0
-78C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.f329a262.js133550746515616049 0
+78C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.f329a262.js133550760425980645 0
 142C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\lib\_wrap_async_generator.js133550741741922504 0
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\has-tostringtag\shams.d.ts133550741620423966 0
 74C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\moment\locale\et.js133547321325592594 0
@@ -999,7 +998,6 @@
 110C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\dependencies\CommonJsExportsParserPlugin.js133550741686654165 0
 62C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\gensync133550741606685747 1
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\esnext.async-iterator.filter.js133550742137621307 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\post-config.js.map133550180370956682 0
 70C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\brace-expansion133547321294217282 1
 161C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\_\_object_without_properties_loose\package.json133550741753970828 0
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules133550741589268966 1
@@ -2531,7 +2529,6 @@
 134C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_object_spread_props.cjs133550741632910988 0
 132C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\src\_async_to_generator.mjs133550741758353569 0
 68C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\resp-modifier133547321293975564 1
-88C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logRegViews\registrationView.js.map133550180371302953 0
 112C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\cjs\_jsx.cjs133550741632390177 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_baseUnset.js133547321320497540 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\EE.js133550707069731491 0
@@ -2904,7 +2901,6 @@
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\es.regexp.flags.js133550742134412546 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133550707052586059 0
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-merge-longhand\types\lib\parseTrbl.d.ts133550735052066505 0
-64C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logRegViews133549014119004211 1
 116C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\_\_async_generator133550741672874145 1
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\jest-worker\build\Farm.js133550741622343628 0
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\yargs\locales\uk_UA.json133547321313761103 0
@@ -3413,7 +3409,7 @@
 110C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack-sources\lib\helpers\splitIntoPotentialTokens.js133550741624748751 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\css-tree\lib\syntax\scope\atrulePrelude.js133550707060200776 0
 120C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\schemas\plugins\optimize\LimitChunkCountPlugin.check.d.ts133550741763779573 0
-69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\Helvetica.ff598533.ttf133550714157632678 0
+69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\Helvetica.ff598533.ttf133550760414151435 0
 128C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_sliced_to_array_loose.mjs133550741697688207 0
 142C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\cjs\_non_iterable_rest.cjs133550741708829588 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\type-fest\ts41\index.d.ts133550707030699345 0
@@ -4684,7 +4680,6 @@
 144C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\lib\_class_static_private_method_get.js133550741724056605 0
 101C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\runtime\LoadScriptRuntimeModule.js133550741723122388 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\react-router\dist\index.d.ts133550741629069759 0
-84C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutView.js.map133549227744852509 0
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\runtime\NonceRuntimeModule.js133550741734650490 0
 105C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\runtime\OnChunksLoadedRuntimeModule.js133550741738580023 0
 117C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\helper-module-transforms\lib\rewrite-live-references.js133550741619452790 0
@@ -4785,7 +4780,6 @@
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\compat-data\README.md133550741596545636 0
 159C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\_\_class_static_private_field_destructure\package.json133550741747906896 0
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\optimize\AggressiveMergingPlugin.js133550741674166457 0
-65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Post.js.map133550220432276297 0
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\cjs\_array_without_holes.cjs133550741703877595 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\types\build-ts.js133550707017503856 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\optimize\ConcatenatedModule.js133550741688362620 0
@@ -4813,7 +4807,6 @@
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\stylehacks\src\dictionary\postcss.js133550734999566853 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\optimize\ModuleConcatenationPlugin.js133550741728265272 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\_convertBrowser.js133547321322378640 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\user-config.js.map133550180367356236 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\es.symbol.match.js133550742135669179 0
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-merge-longhand\types\lib\hasAllProps.d.ts.map133550735050749414 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\msgpackr\package.json133550707038200172 0
@@ -4929,7 +4922,6 @@
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\ids\DeterministicModuleIdsPlugin.js133550741696998879 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\instance\is-well-formed.js133550742159931941 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\ids\HashedModuleIdsPlugin.js133550741709750768 0
-62C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\model.js133548991002928853 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\ids\NamedChunkIdsPlugin.js133550741732771154 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\cache\ResolverCachePlugin.js133550741746660026 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\features\web-animation.js133550707079224001 0
@@ -5044,7 +5036,6 @@
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\web-streams-polyfill\dist\ponyfill.es2018.mjs133550741682489520 0
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\instance\group-to-map.js133550742153291249 0
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\dom-serializer\node_modules\entities133550707029119474 1
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\controllers\controller.js.map133550180371535051 0
 72C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\dotenv-expand\lib133550707021919181 1
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\dependencies\CriticalDependencyWarning.js133550741691722911 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_baseIsMap.js133547321315633124 0
@@ -5140,7 +5131,6 @@
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\serve-index\node_modules\statuses\codes.json133547321299027169 0
 73C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\toString.js133547321347004528 0
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\dependencies\HarmonyExportInitFragment.js133550741708893636 0
-65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\model\model.js.map133548966387522088 0
 82C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\fs-extra\lib\util\assign.js133547321315455233 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\dependencies\HarmonyExports.js133550741708977606 0
 103C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\webpack\lib\dependencies\HarmonyModulesPlugin.js133550741709465172 0
@@ -5730,7 +5720,7 @@
 105C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\features\internationalization.js133550707072265965 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\MO.js133550707074181576 0
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\socket.io-parser\node_modules\ms\package.json133547321290667351 0
-71C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.html133550746515616049 0
+71C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.html133550760425980645 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\util-deprecate\browser.js133550734991114369 0
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@types\eslint\rules\strict-mode.d.ts133550741623930491 0
 125C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\compiled\fast-glob\@nodelib\fs.scandir\out\types133550741727587012 1
@@ -6264,7 +6254,6 @@
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\svgo\plugins\mergePaths.js133550707046023907 0
 69C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\flip.js133547321338166006 0
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\svgo\plugins\moveElemsAttrsToGroup.js133550707047031864 0
-77C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\controllers\controller2.js.map133550292727038427 0
 106C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\dom-serializer\node_modules\entities\lib\index.d.ts133550707031331171 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\svgo\plugins\prefixIds.js133550707047540426 0
 142C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\src\_array_like_to_array.mjs133550741758199663 0
@@ -6792,7 +6781,6 @@
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\code-frame\node_modules\color-name133550707022663001 1
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\abort-controller\dist\abort-controller.mjs133550741655141963 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\iterator\to-async.js133550742182152562 0
-59C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\validator.js133550180370926676 0
 71C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_apply.js133547321293319749 0
 82C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\source-map-js\lib\base64.js133550707019844894 0
 103C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\csso\node_modules\css-tree\cjs\parser\create.cjs133550707034943358 0
@@ -7034,10 +7022,8 @@
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\assignInAll.js133547321331624683 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\socket.io-client\dist\socket.io.js133547321308103617 0
 109C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\es2015\helper\getGlobalScope.d.ts133550741708759368 0
-61C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Post.js133550220432286281 0
 131C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\_\_apply_decs_2203_r\package.json133550741670777471 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\socket.io-client\dist\socket.io.min.js133547321308455376 0
-81C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\profileView.js133550180371804734 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-colormin\src133550735046819852 1
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\actual\math\log10.js133550742162364516 0
 105C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\socket.io-client\dist\socket.io.msgpack.min.js.map133547321314108222 0
@@ -7744,7 +7730,6 @@
 103C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\types\document\Root.d.ts133550741765149580 0
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\semver\ranges\outside.js133550707038514487 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\semver\internal\constants.js133550707025680007 0
-69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\post-config.js133550180370961321 0
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\semver\internal\debug.js133550707026453160 0
 73C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\path-type\index.js133550707018228002 0
 117C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_ts_values.js133550741668942839 0
@@ -7998,7 +7983,6 @@
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\rx\ts\core\linq\observable\skip.ts133547321332229310 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\features\promises.js133550707075695171 0
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\rx\ts\core\backpressure\controlled.ts133547321324619855 0
-85C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\addPostView.js.map133550308634088994 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\diagnostic\lib\diagnostic.d.ts133550707064469257 0
 90C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\sass\node_modules\immutable\LICENSE133550736956726017 0
 106C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\possibleConstructorReturn.js133550741670531918 0
@@ -9075,7 +9059,7 @@
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\ast\esm\traverse.js133550741629253069 0
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-reduce-initial\src133550735047797305 1
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\actual\array\virtual\at.js133550742111499300 0
-66C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\person.3c80c363.png133550714157506475 0
+66C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\person.3c80c363.png133550760414001161 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-merge-longhand\src\lib\mergeRules.js133550735049798911 0
 94C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-reduce-initial\types\index.d.ts133550735049627080 0
 78C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@swc\helpers\_\_dispose133550707068084868 1
@@ -9106,7 +9090,6 @@
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_baseFilter.js133547321312274295 0
 94C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-ordered-values\types\index.d.ts133550735050538202 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\csso\node_modules\css-tree\lib\parser\sequence.js133550707067631302 0
-75C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\config-validation.js133550180366721385 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\postcss-ordered-values\types\lib133550735050671490 1
 78C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\moment\src\locale\he.js133547321328933191 0
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\cache\lib\IDBCache.browser.js133550707023245147 0
@@ -9670,7 +9653,6 @@
 137C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\src\_async_iterator.mjs133550741758841472 0
 73C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\openurl\.npmignore133547321291677450 0
 51C:\Users\ASUS\Desktop\socialNetwork-dzoni\.cache\63133550734926409802 1
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\registrationView.js133548977565299553 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\instance\for-each.js133550742150370594 0
 73C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\openurl\openurl.js133547321294975203 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\openurl\package.json133547321290514369 0
@@ -9956,7 +9938,6 @@
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\neo-async\transformSeries.js133550741648746505 0
 101C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@swc\helpers\_\_class_private_field_loose_base133550707067265901 1
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\neo-async\tryEach.js133550741649200631 0
-86C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutDeleteView.js133549234017136997 0
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\neo-async\unmemoize.js133550741649397036 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\jest-worker\build\FifoQueue.d.ts133550741627443708 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\localtunnel\node_modules\yargs\LICENSE133547321290677322 0
@@ -10046,7 +10027,6 @@
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\array\splice.js133550742180021156 0
 122C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages133550708040653664 0
 131C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional133550708041693111 0
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\registrationView.js.map133548977565239626 0
 137C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\esm\_class_private_method_set.js133550741728074322 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\csso\node_modules\css-tree\lib\convertor133550707065732885 1
 135C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional.cmd133550708041693111 0
@@ -11882,7 +11862,6 @@
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\loader-runner\lib\LoaderRunner.js133550741612397734 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_stackClear.js133547321329934055 0
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\colord\plugins\lch.mjs133550735047251315 0
-66C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logoutView.js133549013521161978 0
 151C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\cjs\_object_destructuring_empty.cjs133550741708961193 0
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\_stackDelete.js133547321329986085 0
 70C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@emotion\stylis133550741626365456 1
@@ -12367,7 +12346,6 @@
 73C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\words.js133547321348137262 0
 136C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\src\_ts_decorate.mjs133550741764869828 0
 72C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\lodash\fp\wrap.js133547321348166797 0
-82C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.a75721b6.js.map133550714161362723 0
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@remix-run\web-fetch\dist\src\lib.node.d.ts.map133550741653732025 0
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\immutable\package.json133547321290578301 0
 106C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\babel-plugin-styled-components\lib\visitors\pure.js133550741624588815 0
@@ -13330,7 +13308,6 @@
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\es\array\sort.js133550742179591767 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\engine.io-parser\build\cjs\decodePacket.js133547321303050349 0
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\internals\array-iteration.js133550742110093554 0
-85C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logRegViews\loginFormView.js.map133550180371415371 0
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\src133550741765499525 1
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\estraverse\gulpfile.js133550741599346424 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\hoist-non-react-statics\LICENSE.md133550741660758393 0
@@ -13414,7 +13391,7 @@
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\css-tree\lib\syntax\node\Dimension.js133550707064828549 0
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\internals\string-punycode-to-ascii.js133550742180920368 0
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\glob-to-regexp\.travis.yml133550741607885877 0
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.57926b3e.js133550746515721520 0
+72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.57926b3e.js133550760425992601 0
 78C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\glob-to-regexp\index.js133550741612534103 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\helper-api-error\package.json133550741597268322 0
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\glob-to-regexp\test.js133550741615398696 0
@@ -14099,7 +14076,6 @@
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\_\_create_class\package.json133550741752497858 0
 79C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\detect-libc\package.json133550707014387353 0
 75C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\destroy\package.json133547321290437405 0
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\comment-config.js.map133550180366378855 0
 112C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Identifier.cjs133550707045448597 0
 70C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\depd\History.md133547321291677450 0
 85C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\es\string\match-all.js133550742163495051 0
@@ -16439,7 +16415,6 @@
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\namer-default\LICENSE133550707062395479 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\esnext.set.difference.js133550742144338625 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\esnext.set.difference.v2.js133550742144399646 0
-90C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutDeleteView.js.map133549234017052743 0
 90C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\esnext.set.every.js133550742144451456 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\modules\esnext.set.find.js133550742144474926 0
 141C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeNonInheritableGroupAttrs.js133550707045579075 0
@@ -16616,7 +16591,6 @@
 140C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\lib\_is_native_function.js133550741730695287 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\internals\entry-virtual.js133550742120926337 0
 103C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@swc\helpers\cjs\_class_apply_descriptor_get.cjs133550707029586830 0
-52C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\model133547462547217393 1
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\types\lib\comments\removeComments.js.map133550741632390177 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\internals\enum-bug-keys.js133550742120946291 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\internals\error-stack-clear.js133550742121152855 0
@@ -16963,7 +16937,6 @@
 111C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\cjs\coders\iso-2022-jp\index.js.map133550741690582523 0
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\string\cooked.js133550742116436313 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\MS.js133550707074319431 0
-89C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutAndDeleteView.js133550180371717447 0
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\string\dedent.js133550742117132749 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\string\from-code-point.js133550742150782428 0
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\full\string\index.js133550742156950137 0
@@ -17514,7 +17487,6 @@
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\typed-array\to-base64.js133550742182184169 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@swc\helpers\src\_possible_constructor_return.mjs133550707071001032 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\typed-array\to-hex.js133550742182516770 0
-85C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\profileView.js.map133550180371802693 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\typed-array\to-reversed.js133550742183328291 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\typed-array\to-spliced.js133550742183822142 0
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\es\typed-array\to-reversed.js133550742183264168 0
@@ -17922,7 +17894,6 @@
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\array\virtual\some.js133550742179335699 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\array\virtual\splice.js133550742179980629 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\abort-controller\dist133550741655647117 1
-80C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\changeView.js133550180371965168 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\array\virtual\to-sorted.js133550742183561941 0
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\gulp.task.sequence\app133547321317949482 1
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\core-js\features\array\virtual\to-spliced.js133550742183800770 0
@@ -18849,7 +18820,6 @@
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\IT.js133550707072431347 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\JP.js133550707072584579 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\KG.js133550707073016869 0
-81C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logRegViews\loginFormView.js133550180371419509 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\KY.js133550707073160882 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\caniuse-lite\data\regions\KZ.js133550707073215605 0
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\cjs\cli\commands.js133550741687303585 0
@@ -19395,7 +19365,6 @@
 107C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\webpack.monkey-hot-loader\desc.md133547321325385897 0
 112C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\webpack.monkey-hot-loader\package.json133547321325109324 0
 111C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\webpack.monkey-hot-loader\app\main.js133547321325259906 0
-85C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\hexaLogRegViews\loginFormView.js133549011973579225 0
 101C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm-node\cli\get\data.js133550741690012999 0
 94C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\webpack.babel\app.js133547321324397891 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\bs-recipes\recipes\webpack.babel\desc.md133547321324612744 0
@@ -20039,7 +20008,6 @@
 96C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\shift-jis133550741713736039 1
 136C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\cjs\_await_value.cjs133550741700103132 0
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\utf-16133550741718493467 1
-78C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.a75721b6.js133550714161105450 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@remix-run\web-fetch\dist\src\lib.node.d.ts133550741657379471 0
 101C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\x-user-defined133550741720142827 1
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\code-frame\node_modules\chalk\license133550707019817704 0
@@ -20082,7 +20050,6 @@
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\euc-jp\index.js133550741668899808 0
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\big5\Big5Decoder.d.ts133550741699927419 0
 110C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\esm\coders\big5\Big5Decoder.js.map133550741680603205 0
-88C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\hexaLogRegViews\registrationView.js133549011974174355 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\es2015\coders133550741668721168 1
 91C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@zxing\text-encoding\es2015\encoding133550741719389503 1
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\highlight\node_modules\ansi-styles\license133550707018472397 0
@@ -20318,7 +20285,6 @@
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\cjs\_non_iterable_spread.cjs133550741708990403 0
 87C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\utf8\lib\index.js133550741614232970 0
 80C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\leb128\lib133550741612371986 1
-66C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews133550173896623387 1
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\leb128\LICENSE.txt133550741616046417 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\leb128\package.json133550741614429611 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@webassemblyjs\leb128\lib\bufs.js133550741605948607 0
@@ -21055,7 +21021,6 @@
 146C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\_\_class_static_private_field_destructure133550741752056912 1
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\namer-default133550707063051643 1
 81C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\node-resolver-core133550707023611802 1
-70C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logoutView.js.map133549013521161978 0
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\optimizer-css133550707062633894 1
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\optimizer-svgo133550707054477818 1
 76C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\optimizer-swc133550707055958039 1
@@ -21127,7 +21092,6 @@
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\index.js133550707033522031 0
 82C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\threads133550707041616366 1
 83C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\types.js133550707042025100 0
-58C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\controllers133547943464423386 1
 78C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\web133550707042784749 1
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\Worker.js133550707043925059 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\workers\lib\WorkerFarm.js133550707044622655 0
@@ -21223,7 +21187,6 @@
 136C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\_\_create_for_of_iterator_helper_loose133550741679867176 1
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\transformer-postcss\lib133550707027209425 1
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\transformer-postcss\src133550707027973313 1
-96C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\displayAllCommentsView.js.map133550296585250963 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\transformer-postcss\lib\constants.js133550707022290154 0
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\transformer-postcss\lib\loadConfig.js133550707023942223 0
 101C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\transformer-postcss\lib\loadPlugins.js133550707026014400 0
@@ -21362,7 +21325,6 @@
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\cjs\_class_apply_descriptor_set.cjs133550741621808638 0
 100C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\runtime-js\lib\helpers\cacheLoader.js133550707054697468 0
 92C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\runtime-js\lib\helpers\worker133550707059611009 1
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\controllers\controller.js133550180371538533 0
 107C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\runtime-js\lib\helpers\worker\wasm-loader.js133550707059620977 0
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\helpers\lib\helpers\awaitAsyncGenerator.js.map133550741628373744 0
 104C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@parcel\runtime-js\lib\helpers\node\css-loader.js133550707055757340 0
@@ -22801,7 +22763,7 @@
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_iterable_to_array_limit_loose.cjs133550741710899728 0
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_non_iterable_spread.cjs133550741711747948 0
 140C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_object_destructuring_empty.cjs133550741711859972 0
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.57926b3e.js.map133550746516427833 0
+76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.57926b3e.js.map133550760426225612 0
 145C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_object_without_properties_loose.cjs133550741712586431 0
 141C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_possible_constructor_return.cjs133550741712810498 0
 130C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\store\node_modules\@swc\helpers\cjs\_set_prototype_of.cjs133550741713270510 0
@@ -22962,7 +22924,6 @@
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\highlight\node_modules\supports-color133550707020406956 1
 132C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\_\_ts_decorate\package.json133550741755645090 0
 136C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\_\_to_property_key\package.json133550741755520294 0
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\comment-config.js133550180366458649 0
 140C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\_\_to_consumable_array\package.json133550741755303175 0
 141C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\lib\_define_enumerable_properties.js133550741727407251 0
 129C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\react\node_modules\@swc\helpers\_\_to_array\package.json133550741755181245 0
@@ -23311,7 +23272,6 @@
 102C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\dist\cjs\workflow\parallel.js133550741689519168 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\README.md133550741681546973 0
 107C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc133550741589258684 1
-65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\User.js.map133550180367934690 0
 119C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\cjs133550741711348360 1
 105C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\dist\esm-node\waterfall\async.js133550741687411882 0
 131C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\_\_iterable_to_array_limit_loose133550741683751233 1
@@ -23358,7 +23318,6 @@
 127C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\_\_inherits133550741751719359 1
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\_\_inherits_loose133550741751635838 1
 146C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\_\_initializer_define_property133550741751820309 1
-64C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Comment.js133550280433757262 0
 145C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\_\_initializer_warning_helper133550741752056912 1
 106C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\esm\state\runtime\plugin.js133550741750279913 0
 142C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\_\_interop_require_default133550741752315668 1
@@ -23594,7 +23553,6 @@
 153C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\lib\_unsupported_iterable_to_array.js133550741741420731 0
 128C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\esm\index.js133550741742845894 0
 150C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\esm\_apply_decorated_descriptor.js133550741711554261 0
-68C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\hexaLogRegViews133549011974174355 1
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\esm\_array_like_to_array.js133550741711828054 0
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\esm\_array_without_holes.js133550741712644720 0
 140C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-immutable\node_modules\@swc\helpers\esm\_array_with_holes.js133550741712328410 0
@@ -24058,7 +24016,6 @@
 121C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\_\_array_without_holes133550741670777471 1
 152C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\cjs\_class_apply_descriptor_update.cjs133550741701018821 0
 139C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\cjs\_class_call_check.cjs133550741701243850 0
-53C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models133550007010387126 1
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\types\lib\converters\toIdentifier.js133550741634567763 0
 156C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\cjs\_class_check_private_static_access.cjs133550741703225931 0
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-effects\node_modules\@swc\helpers\cjs\_class_name_tdz_error.cjs133550741703877595 0
@@ -24216,7 +24173,7 @@
 85C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@emotion\stylis\types\tests.ts133550741626972629 0
 156C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\_\_object_without_properties\package.json133550741755908825 0
 144C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\_\_object_spread\package.json133550741755687175 0
-77C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.56111e5c.css.map133550738539316899 0
+77C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.56111e5c.css.map133550760426199767 0
 157C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\_\_object_destructuring_empty\package.json133550741755486811 0
 150C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-devtools\node_modules\@swc\helpers\_\_non_iterable_spread\package.json133550741755363090 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\helpers\lib\helpers\jsx.js133550741632768110 0
@@ -24522,7 +24479,7 @@
 127C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_throw133550741756152585 1
 130C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_to_array133550741756280253 1
 137C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_to_property_key133550741756668582 1
-65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.html133550746515596821 0
+65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.html133550760425966188 0
 134C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_ts_generator133550741757140961 1
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_ts_metadata133550741757229531 1
 131C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js-reduck\plugin-auto-actions\node_modules\@swc\helpers\_\_ts_values133550741757687303 1
@@ -25014,7 +24971,7 @@
 114C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\types\lib\modifications\prependToMemberExpression.js133550741658812153 0
 116C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_ts_values.mjs133550741698775646 0
 114C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_type_of.mjs133550741698934874 0
-82C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.f329a262.js.map133550746516427833 0
+82C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.f329a262.js.map133550760426215647 0
 113C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_update.mjs133550741699484509 0
 127C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_wrap_async_generator.mjs133550741699747534 0
 124C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\node_modules\@swc\helpers\src\_wrap_native_super.mjs133550741699795942 0
@@ -25208,7 +25165,6 @@
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm\cli\babel.js133550741686759848 0
 94C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm\cli\common.js133550741687541091 0
 97C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm\cli\constants.js133550741689614176 0
-66C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\model.js.map133548991002928853 0
 94C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm\cli\ensure.js133550741690318789 0
 110C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@jridgewell\trace-mapping\dist\types\binary-search.d.ts133550741616453451 0
 90C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\utils\dist\esm\cli\fs.js133550741691222737 0
@@ -25407,7 +25363,6 @@
 93C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\types\server\devServer.d.ts133550741669794077 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\types\server\index.d.ts133550741670405660 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\types\server\route.d.ts133550741670405660 0
-69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\loginFormView.js133548981317585994 0
 89C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\types\server\utils.d.ts133550741670497592 0
 86C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\types\cli\index.d.ts133550741670279469 0
 84C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist133550741688607623 1
@@ -25542,7 +25497,6 @@
 138C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_assert_this_initialized.mjs133550741690694190 0
 130C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_async_generator.mjs133550741690884213 0
 129C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_async_iterator.mjs133550741691020577 0
-68C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Comment.js.map133550280433740660 0
 133C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_async_to_generator.mjs133550741691105708 0
 136C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_await_async_generator.mjs133550741691205127 0
 142C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\src\_check_private_redeclaration.mjs133550741691423792 0
@@ -25657,7 +25611,6 @@
 77C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\.bin\throttleproxy.ps1133547321349516122 0
 158C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_class_check_private_static_field_descriptor.cjs133550741623558399 0
 145C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_class_extract_field_descriptor.cjs133550741623886903 0
-74C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\changeFormView.js.map133549011974174355 0
 135C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_class_name_tdz_error.cjs133550741624218390 0
 145C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_class_private_field_loose_base.cjs133550741625510228 0
 144C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\node_modules\@swc\helpers\cjs\_class_private_field_loose_key.cjs133550741625780391 0
@@ -25708,7 +25661,6 @@
 113C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\types\node\storer\index.d.ts133550741689872392 0
 115C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\types\node\storer\storage.d.ts133550741690670251 0
 109C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\types\browser\index.d.ts133550741689569016 0
-77C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.e46c30be.css.map133550714161213814 0
 116C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\types\browser\nestedRoutes.d.ts133550741689976760 0
 98C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\esm-node\node133550741687499772 1
 103C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime-utils\dist\esm-node\parsed.js133550741685635619 0
@@ -25958,7 +25910,7 @@
 123C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_sliced_to_array.js133550741667334140 0
 137C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_tagged_template_literal_loose.js133550741668085739 0
 113C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_throw.js133550741668323757 0
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.d5400be1.js133550746515596821 0
+72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.d5400be1.js133550760425966188 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\writeOnlyError.js133550741674156202 0
 123C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_to_property_key.js133550741668708244 0
 120C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\node_modules\@swc\helpers\esm\_ts_generator.js133550741668789765 0
@@ -26217,7 +26169,6 @@
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\index.js133550741738378591 0
 114C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\renderToString133550741753870759 1
 108C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\utils.js133550741756095997 0
-86C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutChangeView.js133549224450044279 0
 127C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\renderToString\buildHtml.js133550741719715860 0
 123C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\renderToString\entry.js133550741729663200 0
 126C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\runtime\dist\cjs\ssr\serverRender\renderToString\loadable.js133550741747756468 0
@@ -26478,7 +26429,6 @@
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\cjs\_class_static_private_field_spec_get.cjs133550741627614082 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\helpers\lib\helpers\applyDecs2203R.js133550741623312346 0
 143C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\cjs\_create_for_of_iterator_helper_loose.cjs133550741628922917 0
-79C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\config-validation.js.map133550180366707974 0
 116C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\cjs\_decorate.cjs133550741629450241 0
 116C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\cjs\_defaults.cjs133550741629611851 0
 119C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@modern-js\plugin\node_modules\@swc\helpers\cjs\_export_star.cjs133550741630331204 0
@@ -26904,7 +26854,6 @@
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\AwaitValue.js133550741632548155 0
 95C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\checkInRHS.js133550741634579194 0
 119C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\classApplyDescriptorDestructureSet.js133550741634952858 0
-92C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\hexaLogRegViews\registrationView.js.map133549011974173071 0
 99C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\classCallCheck.js133550741636801700 0
 114C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\classCheckPrivateStaticAccess.js133550741636967833 0
 112C:\Users\ASUS\Desktop\socialNetwork-dzoni\node_modules\@babel\runtime\helpers\esm\classExtractFieldDescriptor.js133550741637481630 0
@@ -27249,41 +27198,9 @@
 64C:\Users\ASUS\Desktop\socialNetwork-dzoni\images\comment (1).png133549260928220874 0
 60C:\Users\ASUS\Desktop\socialNetwork-dzoni\images\person1.jpg133547677339549083 0
 88C:\Users\ASUS\Desktop\socialNetwork-dzoni\fonts\helvetica-rounded-bold-5871d05ead8de.otf131962906000000000 0
-54C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs133550179475649083 1
-54C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\helpers133549280890593400 1
-72C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.1577fad9.js133550714161105450 0
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.1577fad9.js.map133550714161257550 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.56111e5c.css133550738539204236 0
-76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.d5400be1.js.map133550746516427833 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.e46c30be.css133550714161105450 0
-79C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.29a0f3bb.css133550714161105450 0
-83C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-login-register.29a0f3bb.css.map133550714161267515 0
-64C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\logo.990005b0.png133550714157506475 0
-52C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views133549014629146516 1
-70C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\changeFormView.js133549011974255884 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\loginFormView.js.map133548981317581633 0
-67C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\profileView.js133549011973120760 0
-71C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\profileView.js.map133549011973110792 0
-84C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\logRegViews\registrationView.js133550180371308225 0
-81C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\addPostView.js133550308634168789 0
-84C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\changeFormView.js133549014629146516 0
-88C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\changeFormView.js.map133549014629146516 0
-84C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\changeView.js.map133550180371963901 0
-84C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\deletePostView.js133550222337989311 0
-88C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\deletePostView.js.map133550222337969376 0
-92C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\displayAllCommentsView.js133550296585330745 0
-93C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutAndDeleteView.js.map133550180371704599 0
-90C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutChangeView.js.map133549224449968938 0
-80C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\homepageViews\logoutView.js133549227744899192 0
-89C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\views\hexaLogRegViews\loginFormView.js.map133549011973579225 0
-64C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Session.js133550180367336289 0
-68C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\Session.js.map133550180367336289 0
-61C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\models\User.js133550180367955462 0
-61C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\model\model.js133548966387630701 0
-65C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\helpers\helpers.js133550180367128912 0
-69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\helpers\helpers.js.map133550180367116930 0
-73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\controllers\controller2.js133550292727044742 0
-69C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\configs\user-config.js133550180367356236 0
+73C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.56111e5c.css133550760425980645 0
+76C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\hexa-homepage.d5400be1.js.map133550760426215647 0
+64C:\Users\ASUS\Desktop\socialNetwork-dzoni\dist\logo.990005b0.png133550760414001161 0
 68C:\Users\ASUS\Desktop\socialNetwork-dzoni\designImages\sc-colors.png133546785810543399 0
 51C:\Users\ASUS\Desktop\socialNetwork-dzoni\.cache\00133550734883169309 1
 51C:\Users\ASUS\Desktop\socialNetwork-dzoni\.cache\04133550734889698016 1

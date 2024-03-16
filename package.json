@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Simple Social Network",
   "scripts": {
-    "start": "lite-server",
-    "build": "npx parcel build ./*.html"
+    "start": "parcel ./*.html",
+    "build": "npx parcel build ./*.html --dist-dir ./dist"
   },
   "author": "Nikola",
   "license": "ISC",
