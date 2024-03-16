@@ -19,7 +19,7 @@ class DisplayAllComments {
           const html = `
            ${
              +singleComment.post_id === +post_id
-               ? ` <div class="comment">
+               ? ` <div class="comment"  data-comment_id="${singleComment.id}">
                         <p>${singleComment.content}</p>
                     </div> `
                : ''

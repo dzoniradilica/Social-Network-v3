@@ -1,4 +1,7 @@
 import { API_URL_COMMENTS, fetchData } from '../helpers/helpers.js';
+import { ConfigComment } from '../configs/comment-config.js';
+
+let stateComments: ConfigComment[] = [];
 
 class Comment {
   async create(
@@ -21,7 +24,7 @@ class Comment {
       );
       const data = await res.json();
 
-      console.log(data);
+      stateComments.push(data);
 
       return data;
     } catch (err) {
@@ -34,6 +37,8 @@ class Comment {
       const res = await fetchData('api', API_URL_COMMENTS);
       const data = await res.json();
 
+      stateComments.push(data);
+
       return data;
     } catch (err) {
       console.log(err);
@@ -42,9 +47,42 @@ class Comment {
 
   async delete(comment_id: string | number, post_id: string | number) {
     try {
-      console.log(post_id);
+      console.log(comment_id, post_id);
 
-      await fetchData('api-data', `${API_URL_COMMENTS}/${comment_id}`);
+      stateComments.forEach(comments => {
+        if (Array.isArray(comments)) {
+          comments.forEach(comm => {
+            if (comm.post_id === post_id) {
+              const deleteComm = async function () {
+                await fetchData(
+                  'api-data',
+                  `${API_URL_COMMENTS}/${comm.id}`,
+                  'DELETE'
+                );
+              };
+              deleteComm();
+            }
+          });
+        } else {
+          if (comments.post_id === post_id) {
+            const deleteComm = async function () {
+              await fetchData(
+                'api-data',
+                `${API_URL_COMMENTS}/${comments.id}`,
+                'DELETE'
+              );
+            };
+            deleteComm();
+          }
+        }
+      });
+
+      if (comment_id === post_id)
+        await fetchData(
+          'api-data',
+          `${API_URL_COMMENTS}/${comment_id}`,
+          'DELETE'
+        );
     } catch (err) {}
   }
 }

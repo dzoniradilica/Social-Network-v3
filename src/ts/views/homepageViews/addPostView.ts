@@ -1,5 +1,7 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigPost } from '../../configs/post-config';
+import { ConfigComment } from '../../configs/comment-config';
+
 import { post } from '../../models/Post.js';
 import { comment } from '../../models/Comment.js';
 import { session } from '../../models/Session.js';
@@ -145,27 +147,27 @@ class AddPostView {
           '.comment-wrapper'
         ) as HTMLDivElement;
 
-        const html = `
-          <div class="comment">
-            <p>${commentContent.value}</p>
-          </div> 
-        `;
-
         if (commentContent.value !== '') {
-          commentWrapper.insertAdjacentHTML('beforeend', html);
-
           const postId = +parentEl.dataset.post_id!;
 
           const createComment = async function () {
-            await comment.create(
+            const singleComment: ConfigComment = await comment.create(
               session.sessionId,
               postId,
               commentContent.value
             );
+
+            const html = `
+              <div class="comment" data-comment_id="${singleComment.id}>
+                <p>${commentContent.value}</p>
+              </div> 
+        `;
+
+            commentWrapper.insertAdjacentHTML('beforeend', html);
+            // commentContent.value = '';
           };
 
           createComment();
-          commentContent.value = '';
         } else alert('You have to write comment!');
       });
     });
@@ -220,10 +222,30 @@ class AddPostView {
       const postId = +postDiv.dataset.post_id!;
 
       setTimeout(() => {
+        const commentParent = document.querySelectorAll(
+          '.comment-wrapper'
+        ) as NodeListOf<HTMLDivElement>;
+
+        const commentsDiv = document.querySelectorAll(
+          '.comment'
+        ) as NodeListOf<HTMLDivElement>;
+
+        commentsDiv.forEach(singleDiv => {
+          const comment_id = +singleDiv.dataset.comment_id!;
+          console.log(comment_id);
+
+          comment.delete(comment_id, postId);
+          console.log(commentParent);
+
+          commentParent.forEach(el => {
+            if (comment_id === +postId) el.remove();
+          });
+        });
+
         postDiv.remove();
 
         post.delete(postId);
-      }, 1000);
+      }, 1100);
     });
   }
 }
