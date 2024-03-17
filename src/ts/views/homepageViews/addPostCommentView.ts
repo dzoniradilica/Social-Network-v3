@@ -82,7 +82,7 @@ class AddPostView {
               </div>
           </div>
 
-          <div class="comment-parent" id="for-comments">
+          <div class="comment-parent for-comments" id="for-comments">
             <div class="comment-wrapper"></div>
           </div>
     </div>
@@ -148,8 +148,12 @@ class AddPostView {
           ) as HTMLDivElement;
 
           const commentWrapper = (
-            document.querySelector('#for-comments')! as HTMLDivElement
-          ).querySelector('.comment-wrapper')!;
+            (
+              (e.target! as HTMLButtonElement).closest(
+                '.posts-parent-element'
+              )! as HTMLDivElement
+            ).querySelector('#for-comments')! as HTMLDivElement
+          ).querySelector('.comment-wrapper');
 
           if (commentContent.value !== '') {
             const postId = +parentEl.dataset.post_id!;
@@ -162,12 +166,12 @@ class AddPostView {
               );
 
               const html = `
-                <div class="comment" data-comment_id="${singleComment.id}">
-                  <p>${commentContent.value}</p>
-                </div> 
+                  <div class="comment" data-comment_id="${singleComment.id}">
+                    <p>${commentContent.value}</p>
+                  </div> 
                `;
 
-              commentWrapper.insertAdjacentHTML('afterbegin', html);
+              commentWrapper?.insertAdjacentHTML('beforeend', html);
               commentContent.value = '';
             };
 

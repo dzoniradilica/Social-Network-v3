@@ -166,14 +166,14 @@ section .news {
   width: 75%;
   min-height: 35vh;
 }
+section .news h3 {
+  margin-bottom: 20px;
+  color: #d9e4ed;
+}
 section .news .news-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-section .news .news-wrapper h3 {
-  margin-bottom: 20px;
-  color: #d9e4ed;
 }
 section .news .news-wrapper .news-inner {
   display: flex;
