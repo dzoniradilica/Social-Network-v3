@@ -6,7 +6,8 @@ import { comment } from '../models/Comment.js';
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
 import { changeView } from '../views/homepageViews/changeView.js';
-import { addPostView } from '../views/homepageViews/addPostView.js';
+import { displayAllUsersView } from '../views/homepageViews/displayAllUsersView.js';
+import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
@@ -39,6 +40,12 @@ const controlChangeProfile = async function (userData: [string, string]) {
   } catch (err) {
     console.log(err);
   }
+};
+
+const controlDisplayUsers = async function () {
+  const allUsers = await user.getAll();
+
+  displayAllUsersView.displayAllUsers(allUsers);
 };
 
 const controlDeleteProfile = async function () {
@@ -90,6 +97,7 @@ const controlDisplayComments = async function () {
 
 const init = function () {
   controlProfileView();
+  controlDisplayUsers();
   controlDisplayPosts();
   controlDisplayComments();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);

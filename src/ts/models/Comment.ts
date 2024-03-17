@@ -74,13 +74,6 @@ class Comment {
           }
         }
       });
-
-      // if (comment_id === post_id)
-      //   await fetchData(
-      //     'api-data',
-      //     `${API_URL_COMMENTS}/${comment_id}`,
-      //     'DELETE'
-      //   );
     } catch (err) {}
   }
 }

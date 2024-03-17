@@ -1,7 +1,10 @@
 section {
   min-height: 90vh;
 
-  .idk2 {
+  .all-users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     padding: 20px 40px;
     color: #d9e4ed;
@@ -10,9 +13,43 @@ section {
     width: 75%;
     min-height: 45vh;
     margin-bottom: 40px;
+
+    h3 {
+      margin-bottom: 20px;
+      color: $textColor;
+    }
+
+    .users-wrapper {
+      .users-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+
+        h4 {
+          margin-left: 20px;
+          margin-right: 20px;
+          color: $textColor;
+        }
+
+        button {
+          padding: 3px 15px;
+          border: 1px solid #ffd37d;
+          border-radius: 15px;
+          color: #d9e4ed;
+          cursor: pointer;
+          background-color: transparent;
+        }
+      }
+    }
   }
 
-  .idk3 {
+  .news {
     margin-top: 20px;
     padding: 20px 40px;
     color: #d9e4ed;
