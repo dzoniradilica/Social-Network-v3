@@ -153,6 +153,59 @@ section .all-users .users-wrapper .users-inner .btns-div button {
   cursor: pointer;
   background-color: transparent;
 }
+section .chat {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  color: black;
+  background-color: rgb(250, 249, 246);
+  border-radius: 5px;
+  width: 261px;
+  min-height: 34vh;
+}
+section .chat .chat-wrapper .chat-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section .chat .chat-wrapper .chat-header img {
+  margin-right: 20px;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+section .chat .chat-wrapper .chat-header span {
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+section .chat .chat-wrapper .chat-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+section .chat .chat-wrapper .chat-footer input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+section .chat .chat-wrapper .chat-footer button {
+  border: 0;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+}
 section .news {
   position: relative;
   display: flex;

@@ -118,3 +118,7 @@ const init = function () {
 init();
 
 // console.log('radi');
+
+setTimeout(() => {
+  console.log(document.querySelectorAll('#sendMessage'));
+}, 2000);

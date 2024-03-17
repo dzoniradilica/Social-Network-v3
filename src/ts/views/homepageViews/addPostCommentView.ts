@@ -224,7 +224,7 @@ class AddPostView {
       `${deleteBtnId}`
     ) as HTMLButtonElement;
 
-    deleteBtn.addEventListener('click', e => {
+    deleteBtn?.addEventListener('click', e => {
       const postDiv = (e.target! as HTMLButtonElement).closest(
         '.posts-parent-element'
       )! as HTMLDivElement;
