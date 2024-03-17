@@ -45,7 +45,7 @@ class Comment {
     }
   }
 
-  async delete(comment_id: string | number, post_id: string | number) {
+  async delete(_: string | number, post_id: string | number) {
     try {
       stateComments.forEach(comments => {
         if (Array.isArray(comments)) {
@@ -75,12 +75,12 @@ class Comment {
         }
       });
 
-      if (comment_id === post_id)
-        await fetchData(
-          'api-data',
-          `${API_URL_COMMENTS}/${comment_id}`,
-          'DELETE'
-        );
+      // if (comment_id === post_id)
+      //   await fetchData(
+      //     'api-data',
+      //     `${API_URL_COMMENTS}/${comment_id}`,
+      //     'DELETE'
+      //   );
     } catch (err) {}
   }
 }
