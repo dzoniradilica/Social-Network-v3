@@ -2,6 +2,7 @@ section {
   min-height: 90vh;
 
   .all-users {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,17 +34,21 @@ section {
 
         h4 {
           margin-left: 20px;
-          margin-right: 20px;
+          margin-right: 10rem;
           color: $textColor;
         }
 
-        button {
-          padding: 3px 15px;
-          border: 1px solid #ffd37d;
-          border-radius: 15px;
-          color: #d9e4ed;
-          cursor: pointer;
-          background-color: transparent;
+        .btns-div {
+          position: absolute;
+          right: 2%;
+          button {
+            padding: 3px 15px;
+            border: 1px solid #ffd37d;
+            border-radius: 15px;
+            color: #d9e4ed;
+            cursor: pointer;
+            background-color: transparent;
+          }
         }
       }
     }

@@ -109,6 +109,7 @@ section {
   min-height: 90vh;
 }
 section .all-users {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,10 +138,14 @@ section .all-users .users-wrapper .users-inner img {
 }
 section .all-users .users-wrapper .users-inner h4 {
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10rem;
   color: #d9e4ed;
 }
-section .all-users .users-wrapper .users-inner button {
+section .all-users .users-wrapper .users-inner .btns-div {
+  position: absolute;
+  right: 2%;
+}
+section .all-users .users-wrapper .users-inner .btns-div button {
   padding: 3px 15px;
   border: 1px solid #ffd37d;
   border-radius: 15px;
