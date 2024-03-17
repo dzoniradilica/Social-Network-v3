@@ -47,8 +47,6 @@ class Comment {
 
   async delete(comment_id: string | number, post_id: string | number) {
     try {
-      console.log(comment_id, post_id);
-
       stateComments.forEach(comments => {
         if (Array.isArray(comments)) {
           comments.forEach(comm => {

@@ -82,7 +82,7 @@ class AddPostView {
               </div>
           </div>
 
-          <div class="comment-parent">
+          <div class="comment-parent" id="for-comments">
             <div class="comment-wrapper"></div>
           </div>
     </div>
@@ -138,7 +138,7 @@ class AddPostView {
 
     addCommentBtns.forEach(commentBtn => {
       commentBtn.addEventListener('click', e => {
-        const idk = async function () {
+        const render = async function () {
           const commentContent = (e.target! as HTMLButtonElement)
             .previousElementSibling as HTMLInputElement;
 
@@ -146,13 +146,11 @@ class AddPostView {
             '.post'
           ) as HTMLDivElement;
 
-          const commentWrapper = (e.target! as HTMLButtonElement).closest(
-            '.comment-wrapper'
-          ) as HTMLDivElement;
+          const commentWrapper = (
+            document.querySelector('#for-comments')! as HTMLDivElement
+          ).querySelector('.comment-wrapper')!;
 
           if (commentContent.value !== '') {
-            console.log(commentContent);
-
             const postId = +parentEl.dataset.post_id!;
 
             const createComment = async function () {
@@ -162,20 +160,21 @@ class AddPostView {
                 commentContent.value
               );
 
-              return `
-              <div class="comment" data-comment_id="${singleComment.id}">
-                <p>${commentContent.value}</p>
-              </div> 
-        `;
+              const html = `
+                <div class="comment" data-comment_id="${singleComment.id}">
+                  <p>${commentContent.value}</p>
+                </div> 
+               `;
+
+              commentWrapper.insertAdjacentHTML('afterbegin', html);
+              commentContent.value = '';
             };
 
-            let html = await createComment();
-            commentWrapper.insertAdjacentHTML('beforeend', html);
-            commentContent.value = '';
+            await createComment();
           } else alert('You have to write comment!');
         };
 
-        idk();
+        render();
       });
     });
   }
@@ -232,15 +231,18 @@ class AddPostView {
       )! as HTMLDivElement;
       const postId = +divForId.dataset.post_id!;
 
+      post.delete(postId);
+
+      postDiv.remove();
+
       setTimeout(() => {
-        const idk2 = async function () {
+        const deleteCommentsAndPosts = async function () {
           const commentsDiv = document.querySelectorAll(
             '.comment'
           ) as NodeListOf<HTMLDivElement>;
 
           commentsDiv.forEach(singleDiv => {
             const comment_id = +singleDiv.dataset.comment_id!;
-            console.log(comment_id);
 
             post.delete(postId);
             comment.delete(comment_id, postId);
@@ -248,7 +250,7 @@ class AddPostView {
           });
         };
 
-        idk2();
+        deleteCommentsAndPosts();
       }, 1100);
     });
   }

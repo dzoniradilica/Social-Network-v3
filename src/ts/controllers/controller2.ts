@@ -9,9 +9,6 @@ import { changeView } from '../views/homepageViews/changeView.js';
 import { addPostView } from '../views/homepageViews/addPostView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
 
-import 'core-js/stable';
-import '@modern-js/runtime';
-
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
 }

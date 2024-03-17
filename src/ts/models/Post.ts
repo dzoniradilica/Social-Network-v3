@@ -47,8 +47,6 @@ class Post {
 
   async delete(postId: string | number) {
     try {
-      console.log(postId);
-
       await fetchData('api-data', `${API_URL_POSTS}/${postId}`, 'DELETE');
     } catch (err) {
       console.log(err);
