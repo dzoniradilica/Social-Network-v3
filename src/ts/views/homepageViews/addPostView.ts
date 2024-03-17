@@ -91,6 +91,7 @@ class AddPostView {
 
     this.addLikes('.like-btn');
     this.addComments('.comment-btn');
+    this.deletePostAndComment('#deletePost');
     this.deletePost('#deletePost');
   }
 
@@ -214,7 +215,29 @@ class AddPostView {
     });
   }
 
-  private async deletePost(deleteBtnId: string) {
+  private async deletePost(deleteBtnId?: string) {
+    const deleteBtn = document.querySelector(
+      `${deleteBtnId}`
+    ) as HTMLButtonElement;
+
+    deleteBtn.addEventListener('click', e => {
+      const postDiv = (e.target! as HTMLButtonElement).closest(
+        '.posts-parent-element'
+      )! as HTMLDivElement;
+
+      const divForId = (e.target! as HTMLButtonElement).closest(
+        '.post'
+      )! as HTMLDivElement;
+      const postId = +divForId.dataset.post_id!;
+
+      setTimeout(() => {
+        postDiv.remove();
+        post.delete(postId);
+      }, 1200);
+    });
+  }
+
+  private async deletePostAndComment(deleteBtnId: string) {
     const deleteBtn = document.querySelector(
       `${deleteBtnId}`
     ) as HTMLButtonElement;
@@ -230,10 +253,6 @@ class AddPostView {
         '.post'
       )! as HTMLDivElement;
       const postId = +divForId.dataset.post_id!;
-
-      post.delete(postId);
-
-      postDiv.remove();
 
       setTimeout(() => {
         const deleteCommentsAndPosts = async function () {
