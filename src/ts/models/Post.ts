@@ -6,16 +6,28 @@ export const postsState = [];
 class Post {
   async create(userId: string | number, content: string, author: string) {
     try {
+      const options = {
+        hour: 'numeric',
+        minute: 'numeric',
+        day: '2-digit',
+        month: 'numeric',
+        year: 'numeric',
+      } as const;
+
       const sendData = {
         userId: userId,
         content: content,
         likes: 0,
         author: author,
-        liked: false,
+        created: new Intl.DateTimeFormat(navigator.language, options).format(
+          new Date()
+        ),
       };
 
       const res = await fetchData('api-data', API_URL_POSTS, 'POST', sendData);
       const data = await res.json();
+
+      console.log(data);
 
       return data;
     } catch (err) {

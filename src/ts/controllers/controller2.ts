@@ -2,11 +2,12 @@ import { session } from '../models/Session.js';
 import { user } from '../models/User.js';
 import { post } from '../models/Post.js';
 import { comment } from '../models/Comment.js';
+import { news } from '../models/News.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
 import { changeView } from '../views/homepageViews/changeView.js';
-import { displayAllUsersView } from '../views/homepageViews/displayAllUsersView.js';
+import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndNewsView.js';
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
 
@@ -44,8 +45,15 @@ const controlChangeProfile = async function (userData: [string, string]) {
 
 const controlDisplayUsers = async function () {
   const allUsers = await user.getAll();
+  const currentUser = await user.get(session.sessionId);
 
-  displayAllUsersView.displayAllUsers(allUsers);
+  displayUsersAndNewsView.displayAllUsers(allUsers, currentUser.id);
+};
+
+const controlDisplayNews = async function () {
+  const allNews = await news.getAll();
+
+  displayUsersAndNewsView.displayAllNews(allNews);
 };
 
 const controlDeleteProfile = async function () {
@@ -98,6 +106,7 @@ const controlDisplayComments = async function () {
 const init = function () {
   controlProfileView();
   controlDisplayUsers();
+  controlDisplayNews();
   controlDisplayPosts();
   controlDisplayComments();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);

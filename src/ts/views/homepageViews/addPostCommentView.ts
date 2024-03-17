@@ -57,7 +57,7 @@ class AddPostView {
                           ? `<h3 class="author">${userData.username}</h3>`
                           : singlePost.author
                       }</h3>
-                      <p class="date">2 days ago</p>
+                      <p class="date">${singlePost.created}</p>
                   </div>
               </div>
 
