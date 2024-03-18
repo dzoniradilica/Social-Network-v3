@@ -126,6 +126,22 @@ header .person-photo img {
 
 section {
   min-height: 90vh;
+  /* Track */
+  /* Handle */
+}
+section .hidden {
+  opacity: 0;
+}
+section ::-webkit-scrollbar {
+  width: 10px;
+}
+section ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+section ::-webkit-scrollbar-thumb {
+  background: #d9e4ed;
+  border-radius: 10px;
 }
 section .all-users {
   position: relative;
@@ -180,28 +196,70 @@ section .chat {
   align-items: center;
   padding: 0px 20px;
   color: black;
-  background-color: rgb(250, 249, 246);
+  background-color: #1f2124;
   border-radius: 5px;
   width: 261px;
   min-height: 34vh;
+  opacity: 1 ease;
+}
+section .chat .chat-wrapper {
+  width: 100%;
 }
 section .chat .chat-wrapper .chat-header {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
-section .chat .chat-wrapper .chat-header img {
+section .chat .chat-wrapper .chat-header .person-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .chat .chat-wrapper .chat-header .person-info img {
   margin-right: 20px;
   position: absolute;
   right: 100px;
-  top: 0;
+  width: 24px;
+  height: 24px;
 }
-section .chat .chat-wrapper .chat-header span {
+section .chat .chat-wrapper .chat-header .person-info h5 {
+  color: #d9e4ed;
+  font-size: 20px;
+}
+section .chat .chat-wrapper .chat-header .button-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .chat .chat-wrapper .chat-header .button-inner span {
+  color: #d9e4ed;
   position: absolute;
-  left: 130px;
-  top: 0px;
+  right: 0;
   font-size: 20px;
   cursor: pointer;
+}
+section .chat .chat-wrapper .chat-body {
+  position: relative;
+  overflow-y: scroll;
+  height: 20vh;
+  background-color: #232932;
+}
+section .chat .chat-wrapper .chat-body .message-recived {
+  color: #d9e4ed;
+  text-align: left;
+  margin-left: 5%;
+}
+section .chat .chat-wrapper .chat-body .message-recived p {
+  margin-top: 10px;
+}
+section .chat .chat-wrapper .chat-body .message-sent {
+  color: #d9e4ed;
+  text-align: right;
+  margin-right: 5%;
+}
+section .chat .chat-wrapper .chat-body .message-sent p {
+  margin-top: 10px;
 }
 section .chat .chat-wrapper .chat-footer {
   position: absolute;
@@ -210,7 +268,7 @@ section .chat .chat-wrapper .chat-footer {
   left: 0;
   right: 0;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -218,12 +276,14 @@ section .chat .chat-wrapper .chat-footer input {
   border: none;
   background-color: transparent;
   outline: none;
+  color: #d9e4ed;
 }
 section .chat .chat-wrapper .chat-footer button {
   border: 0;
   color: black;
   cursor: pointer;
   background-color: transparent;
+  color: #d9e4ed;
 }
 section .news {
   position: relative;
