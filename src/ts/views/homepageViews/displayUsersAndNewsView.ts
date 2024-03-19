@@ -9,8 +9,8 @@ class DisplayUsersAndNewsView {
     '.news-wrapper'
   )! as HTMLDivElement;
 
-  displayAllUsers(allUsers: ConfigUser[], currentUserId: string | number) {
-    allUsers.forEach(singleUser => {
+  displayAllUsers(allUsers?: ConfigUser[], currentUserId?: string | number) {
+    allUsers!.forEach(singleUser => {
       if (+currentUserId! !== +singleUser.id) {
         const html = `
         <div class="users-inner">

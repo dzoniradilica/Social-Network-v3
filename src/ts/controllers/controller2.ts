@@ -104,7 +104,9 @@ const controlDisplayComments = async function () {
   }
 };
 
-const controlSendMessage = async function (_: string | number) {};
+const controlSendMessage = async function (_: string | number) {
+  sendMessageView.idk(displayUsersAndNewsView.parentElementUsers);
+};
 
 const init = function () {
   controlProfileView();
@@ -120,5 +122,3 @@ const init = function () {
 };
 
 init();
-
-// console.log('radi');
