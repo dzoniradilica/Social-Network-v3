@@ -104,9 +104,7 @@ const controlDisplayComments = async function () {
   }
 };
 
-const controlSendMessage = function () {
-  sendMessageView;
-};
+const controlSendMessage = async function (_: string | number) {};
 
 const init = function () {
   controlProfileView();
@@ -114,11 +112,11 @@ const init = function () {
   controlDisplayNews();
   controlDisplayPosts();
   controlDisplayComments();
-  controlSendMessage();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
   addPostView.addPostHandler(controlAddPost);
+  sendMessageView.addHandlerSendUser(controlSendMessage);
 };
 
 init();

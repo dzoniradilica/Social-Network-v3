@@ -220,13 +220,13 @@ section .chat .chat-wrapper .chat-header .person-info {
 section .chat .chat-wrapper .chat-header .person-info img {
   margin-right: 20px;
   position: absolute;
-  right: 100px;
   width: 24px;
   height: 24px;
 }
 section .chat .chat-wrapper .chat-header .person-info h5 {
   color: #d9e4ed;
   font-size: 20px;
+  margin-left: 40px;
 }
 section .chat .chat-wrapper .chat-header .button-inner {
   display: flex;
