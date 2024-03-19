@@ -2,7 +2,34 @@ import { ConfigUser } from '../../configs/user-config';
 import { user } from '../../models/User.js';
 
 class SendMessageView {
-  chatParent = document.querySelector('.chat')! as HTMLDivElement;
+  renderChat(singleUser: ConfigUser) {
+    return `
+    <div class="chat-wrapper">
+        <div class="chat-header">
+        <div class="person-info">
+            <img src="images/person.png" alt="person" />
+            <h5 class="chat-name">${singleUser?.username}</h5>
+        </div>
+
+        <div class="button-inner">
+            <span id="closeChat">X</span>
+        </div>
+        </div>
+
+        <div class="chat-body"></div>
+
+        <div class="chat-footer">
+        <input
+            type="text"
+            name=""
+            id="chatContent"
+            placeholder="Send message..."
+        />
+        <button id="sendMessage">Send</button>
+        </div>
+    </div>
+`;
+  }
 
   addHandlerSendUser(handler: Function) {
     setTimeout(() => {
@@ -14,39 +41,16 @@ class SendMessageView {
 
       chatBtn.forEach(btn => {
         btn.addEventListener('click', e => {
-          const renderChat = async function () {
+          const displayChat = async function () {
             chatParent.innerHTML = '';
-            chatParent.style.opacity = '100';
+            chatParent.style.opacity = '0';
+
+            const messageClass = new SendMessageView();
 
             const user_id = (e.target! as HTMLButtonElement).dataset.user_id!;
             const singleUser: ConfigUser = await user.get(user_id);
 
-            const html = `
-            <div class="chat-wrapper">
-                <div class="chat-header">
-                <div class="person-info">
-                    <img src="images/person.png" alt="person" />
-                    <h5 class="chat-name">${singleUser?.username}</h5>
-                </div>
-    
-                <div class="button-inner">
-                    <span id="closeChat">X</span>
-                </div>
-                </div>
-    
-                <div class="chat-body"></div>
-    
-                <div class="chat-footer">
-                <input
-                    type="text"
-                    name=""
-                    id="chatContent"
-                    placeholder="Send message..."
-                />
-                <button id="sendMessage">Send</button>
-                </div>
-            </div>
-        `;
+            const html = messageClass.renderChat(singleUser);
 
             chatParent.insertAdjacentHTML('afterbegin', html);
 
@@ -61,18 +65,18 @@ class SendMessageView {
                 chatParent.style.opacity = '0';
               });
             });
-          };
 
-          renderChat();
+            messageClass.renderMessages(chatParent);
+          };
+          displayChat();
         });
       });
-    }, 1000);
+    }, 2000);
   }
 
-  provjera() {
-    console.log(this.chatParent);
+  renderMessages(chatParent: HTMLDivElement) {
+    console.log(chatParent);
   }
 }
 
 export const sendMessageView = new SendMessageView();
-sendMessageView.provjera();
