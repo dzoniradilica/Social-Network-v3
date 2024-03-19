@@ -11,7 +11,7 @@ class ChangeView {
   addHandlerChange(hadnler: Function) {
     this.changeProfile.addEventListener('click', e => {
       e.preventDefault();
-      console.log('op');
+
       const changeUsername = (
         document.querySelector('#changeUsername')! as HTMLInputElement
       ).value;

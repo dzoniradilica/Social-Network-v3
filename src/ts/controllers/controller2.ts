@@ -10,6 +10,7 @@ import { changeView } from '../views/homepageViews/changeView.js';
 import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndNewsView.js';
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
+import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
@@ -103,12 +104,17 @@ const controlDisplayComments = async function () {
   }
 };
 
+const controlSendMessage = function () {
+  sendMessageView;
+};
+
 const init = function () {
   controlProfileView();
   controlDisplayUsers();
   controlDisplayNews();
   controlDisplayPosts();
   controlDisplayComments();
+  controlSendMessage();
   logoutDeleteView.addHandlerDeleteSession(controlLogin);
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
@@ -118,7 +124,3 @@ const init = function () {
 init();
 
 // console.log('radi');
-
-setTimeout(() => {
-  console.log(document.querySelectorAll('#sendMessage'));
-}, 2000);

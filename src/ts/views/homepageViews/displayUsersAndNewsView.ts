@@ -18,7 +18,7 @@ class DisplayUsersAndNewsView {
             <h4 class="user-name">${singleUser.username}</h4>
 
             <div class="btns-div">
-                <button id="sendMessage">Message</button>
+                <button id="sendMessage" data-user_id="${singleUser.id}">Message</button>
             </div>
         </div>
         `;

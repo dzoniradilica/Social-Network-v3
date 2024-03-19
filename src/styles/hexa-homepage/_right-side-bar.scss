@@ -86,7 +86,8 @@ section {
     border-radius: 5px;
     width: 261px;
     min-height: 34vh;
-    opacity: 1 ease;
+    opacity: 0;
+    transition: all 1s;
 
     .chat-wrapper {
       width: 100%;
