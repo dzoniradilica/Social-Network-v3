@@ -75,7 +75,23 @@ class SendMessageView {
   }
 
   renderMessages(chatParent: HTMLDivElement) {
-    console.log(chatParent);
+    const sendBtn = chatParent.querySelector(
+      '#sendMessage'
+    ) as HTMLButtonElement;
+
+    sendBtn.addEventListener('click', e => {
+      const chatContent = (e.target! as HTMLButtonElement)!
+        .previousElementSibling! as HTMLInputElement;
+
+      const chatBody = chatParent.querySelector('.chat-body') as HTMLDivElement;
+      const html = `
+        <div class="message-sent">
+          <p>${chatContent.value}</p>
+        </div>
+      `;
+
+      chatBody.insertAdjacentHTML('afterbegin', html);
+    });
   }
 }
 
