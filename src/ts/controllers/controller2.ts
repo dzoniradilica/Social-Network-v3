@@ -104,8 +104,10 @@ const controlDisplayComments = async function () {
   }
 };
 
-const controlSendMessage = async function (_: string | number) {
-  sendMessageView.idk(displayUsersAndNewsView.parentElementUsers);
+const controlSendMessage = async function (user_id: string | number) {
+  const singleUser = await user.get(user_id);
+
+  console.log(singleUser);
 };
 
 const init = function () {

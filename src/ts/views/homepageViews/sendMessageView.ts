@@ -2,30 +2,6 @@ import { ConfigUser } from '../../configs/user-config';
 import { user } from '../../models/User.js';
 
 class SendMessageView {
-  idk(all: HTMLDivElement) {
-    const btns = all.querySelectorAll(
-      '#sendMessage'
-    )! as NodeListOf<HTMLButtonElement>;
-
-    btns.forEach(btn => {
-      console.log(btn);
-    });
-  }
-
-  realHandler(all: HTMLDivElement, handler: Function) {
-    const btns = all.querySelectorAll(
-      '#sendMessage'
-    )! as NodeListOf<HTMLButtonElement>;
-
-    btns.forEach(btn => {
-      btn.addEventListener('click', e => {
-        const user_id = (e.target! as HTMLButtonElement).dataset.user_id!;
-
-        handler(user_id);
-      });
-    });
-  }
-
   renderChat(singleUser: ConfigUser) {
     return `
     <div class="chat-wrapper">
