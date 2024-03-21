@@ -1,10 +1,12 @@
-import { ConfigUser } from '../../configs/user-config';
+import { ConfigUser } from '../../configs/user-config.js';
 import { user } from '../../models/User.js';
+import { message } from '../../models/Message.js';
+import { session } from '../../models/Session.js';
 
 class SendMessageView {
   renderChat(singleUser: ConfigUser) {
     return `
-    <div class="chat-wrapper">
+    <div class="chat-wrapper" data-user_id="${singleUser.id}">
         <div class="chat-header">
         <div class="person-info">
             <img src="images/person.png" alt="person" />
@@ -79,6 +81,10 @@ class SendMessageView {
       '#sendMessage'
     ) as HTMLButtonElement;
 
+    const recivedUserId = (
+      chatParent.querySelector('.chat-wrapper')! as HTMLDivElement
+    ).dataset.user_id!;
+
     sendBtn.addEventListener('click', e => {
       const chatContent = (e.target! as HTMLButtonElement)!
         .previousElementSibling! as HTMLInputElement;
@@ -90,7 +96,17 @@ class SendMessageView {
         </div>
       `;
 
-      chatBody.insertAdjacentHTML('afterbegin', html);
+      chatBody.innerHTML += html;
+
+      const createMessage = async function () {
+        await message.create(
+          session.sessionId,
+          recivedUserId,
+          chatContent.value
+        );
+      };
+
+      createMessage();
     });
   }
 }
