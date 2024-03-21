@@ -18,15 +18,14 @@ class DisplayAllMessages {
         '.chat-body'
       )! as HTMLDivElement;
       const author = singleMessage.author;
-      const recivedUser = singleMessage.recivedUser;
-      console.log(recivedUser.id);
+      const recivedUser = singleMessage.recived_user;
 
       if (author && recivedId === recivedUser.id) {
         const html = `
-            <div class="message-sent">
-                <p>${singleMessage.content}</p>
-            </div>
-        `;
+              <div class="message-sent">
+                  <p>${singleMessage.content}</p>
+              </div>
+          `;
         chatBody.innerHTML += html;
       }
     });
