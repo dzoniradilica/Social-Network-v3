@@ -3,6 +3,7 @@ import { user } from '../models/User.js';
 import { post } from '../models/Post.js';
 import { comment } from '../models/Comment.js';
 import { news } from '../models/News.js';
+import { message } from '../models/Message.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
@@ -11,6 +12,7 @@ import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndN
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
 import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
+import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
 
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
@@ -104,10 +106,11 @@ const controlDisplayComments = async function () {
   }
 };
 
-const controlSendMessage = async function (user_id: string | number) {
-  const singleUser = await user.get(user_id);
+const controlSendMessage = async function () {
+  const allMessages = await message.getAll();
+  console.log(allMessages);
 
-  console.log(singleUser);
+  displayAllMessages.displayMess(allMessages);
 };
 
 const init = function () {

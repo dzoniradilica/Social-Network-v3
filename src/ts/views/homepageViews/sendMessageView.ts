@@ -99,11 +99,11 @@ class SendMessageView {
       chatBody.innerHTML += html;
 
       const createMessage = async function () {
-        await message.create(
-          session.sessionId,
-          recivedUserId,
-          chatContent.value
-        );
+        const author = await user.get(session.sessionId);
+        const recivedUser = await user.get(recivedUserId);
+
+        await message.create(chatContent.value, author, recivedUser);
+        chatContent.value = '';
       };
 
       createMessage();
