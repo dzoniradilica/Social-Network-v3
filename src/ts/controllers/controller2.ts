@@ -108,9 +108,9 @@ const controlDisplayComments = async function () {
 
 const controlSendMessage = async function () {
   const allMessages = await message.getAll();
-  console.log(allMessages);
+  const currentUser = await user.get(session.sessionId);
 
-  displayAllMessages.displayMess(allMessages);
+  displayAllMessages.displayMess(allMessages, currentUser);
 };
 
 const init = function () {

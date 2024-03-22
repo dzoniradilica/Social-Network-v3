@@ -91,8 +91,8 @@ class SendMessageView {
 
       const chatBody = chatParent.querySelector('.chat-body') as HTMLDivElement;
       const html = `
-        <div class="message-sent">
-          <p>${chatContent.value}</p>
+        <div class="message-sent" data-user_id="${session.sessionId}">
+          <p data-sent_user_id="">${chatContent.value}</p>
         </div>
       `;
 
