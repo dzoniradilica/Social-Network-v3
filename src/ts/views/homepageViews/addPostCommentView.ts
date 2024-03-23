@@ -1,6 +1,5 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigPost } from '../../configs/post-config';
-// import { ConfigComment } from '../../configs/comment-config';
 
 import { post } from '../../models/Post.js';
 import { comment } from '../../models/Comment.js';

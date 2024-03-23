@@ -4,7 +4,7 @@
   "description": "Simple Social Network",
   "scripts": {
     "start": "parcel ./*.html",
-    "build": "npx parcel build ./*.html --dist-dir ./dist"
+    "build": "webpack"
   },
   "author": "Nikola",
   "license": "ISC",
