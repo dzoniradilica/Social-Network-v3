@@ -4,6 +4,7 @@ import { post } from '../models/Post.js';
 import { comment } from '../models/Comment.js';
 import { news } from '../models/News.js';
 import { message } from '../models/Message.js';
+import { pagination } from '../models/Pagination.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
 import { profileView } from '../views/homepageViews/profileView.js';
@@ -112,6 +113,8 @@ const controlSendMessage = async function () {
 
   displayAllMessages.displayMess(allMessages, currentUser);
 };
+
+pagination.paginationResults();
 
 const init = function () {
   controlProfileView();
