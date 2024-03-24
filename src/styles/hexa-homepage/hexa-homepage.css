@@ -188,6 +188,21 @@ section .all-users .users-wrapper .users-inner .btns-div button {
   cursor: pointer;
   background-color: transparent;
 }
+section .all-users .pagination-wrapper {
+  display: flex;
+}
+section .all-users .pagination-wrapper .left-arrow {
+  position: absolute;
+  left: 5%;
+  bottom: 1.5%;
+  cursor: pointer;
+}
+section .all-users .pagination-wrapper .right-arrow {
+  position: absolute;
+  right: 5%;
+  bottom: 1.5%;
+  cursor: pointer;
+}
 section .chat {
   position: fixed;
   z-index: 2;
