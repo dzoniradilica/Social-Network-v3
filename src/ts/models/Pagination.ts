@@ -9,18 +9,16 @@ export const paginationState: any = {
   resultsPerPage: 4,
 };
 
+const allUsers: ConfigUser[] = await user.getAll();
+
+allUsers.forEach(singleUser => {
+  if (singleUser.id !== session.sessionId)
+    paginationState.users.push(singleUser);
+});
+
 class Pagination {
   async paginationResults(page: number = paginationState.page) {
     paginationState.page = page;
-
-    console.log(page);
-
-    const allUsers: ConfigUser[] = await user.getAll();
-
-    allUsers.forEach(singleUser => {
-      if (singleUser.id !== session.sessionId)
-        paginationState.users.push(singleUser);
-    });
 
     const start = (page - 1) * paginationState.resultsPerPage;
     const end = page * paginationState.resultsPerPage;

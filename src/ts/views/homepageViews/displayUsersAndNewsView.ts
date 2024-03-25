@@ -30,6 +30,9 @@ class DisplayUsersAndNewsView {
     const parentEelementPagination = document.querySelector(
       '.pagination-wrapper'
     )! as HTMLDivElement;
+
+    console.log(data);
+
     const curPage = data.page;
     const numPages = Math.ceil(data.users.length / data.resultsPerPage);
 
@@ -81,6 +84,7 @@ class DisplayUsersAndNewsView {
   }
 
   displayAllUsers(allUsers?: ConfigUser[], currentUserId?: string | number) {
+    this.parentElementUsers.innerHTML = '';
     allUsers!.forEach(singleUser => {
       if (+currentUserId! !== +singleUser.id) {
         const html = `
