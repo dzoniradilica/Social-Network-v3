@@ -13,6 +13,8 @@ class Pagination {
   async paginationResults(page: number = paginationState.page) {
     paginationState.page = page;
 
+    console.log(page);
+
     const allUsers: ConfigUser[] = await user.getAll();
 
     allUsers.forEach(singleUser => {

@@ -15,6 +15,8 @@ import { displayAllComments } from '../views/homepageViews/displayAllCommentsVie
 import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
 import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
 
+import { paginationState } from '../models/Pagination.js';
+
 if (!session.get(document.cookie.split('=')[0])) {
   window.location.href = '../../../hexa-login-register.html';
 }
@@ -49,10 +51,25 @@ const controlChangeProfile = async function (userData: [string, string]) {
 
 const controlDisplayUsers = async function () {
   try {
-    const paginationUsers = await pagination.paginationResults(1);
+    const paginationUsers = await pagination.paginationResults();
     const currentUser = await user.get(session.sessionId);
 
     displayUsersAndNewsView.displayAllUsers(paginationUsers, currentUser.id);
+
+    displayUsersAndNewsView.renderPagination(paginationState);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const controlPagination = async function (goTo?: number) {
+  try {
+    const paginationUsers = await pagination.paginationResults(goTo);
+    const currentUser = await user.get(session.sessionId);
+
+    displayUsersAndNewsView.renderPagination(paginationState);
+
+    displayUsersAndNewsView.displayAllUsers(paginationUsers, currentUser);
   } catch (err) {
     console.log(err);
   }
@@ -132,6 +149,7 @@ const init = function () {
   logoutDeleteView.addHandlerDelete(controlDeleteProfile);
   changeView.addHandlerChange(controlChangeProfile);
   addPostView.addPostHandler(controlAddPost);
+  displayUsersAndNewsView.addHandlerClick(controlPagination);
   sendMessageView.addHandlerSendUser(controlSendMessage);
 };
 

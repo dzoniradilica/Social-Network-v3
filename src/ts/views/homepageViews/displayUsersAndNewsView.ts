@@ -1,5 +1,6 @@
 import { ConfigUser } from '../../configs/user-config';
 import { ConfigNews } from '../../configs/news-config';
+import { ConfigPagination } from '../../configs/pagination-config';
 
 class DisplayUsersAndNewsView {
   parentElementUsers = document.querySelector(
@@ -8,6 +9,76 @@ class DisplayUsersAndNewsView {
   parentElementNews = document.querySelector(
     '.news-wrapper'
   )! as HTMLDivElement;
+
+  addHandlerClick(handler: Function) {
+    const parentElement = document.querySelector(
+      '.all-users'
+    )! as HTMLDivElement;
+
+    parentElement.addEventListener('click', e => {
+      const btn = (e.target! as HTMLEmbedElement).closest(
+        '.pagination-btn'
+      )! as HTMLImageElement;
+
+      const goTo = +btn.dataset.go_to!;
+
+      handler(goTo);
+    });
+  }
+
+  renderPagination(data: ConfigPagination) {
+    const parentEelementPagination = document.querySelector(
+      '.pagination-wrapper'
+    )! as HTMLDivElement;
+    const curPage = data.page;
+    const numPages = Math.ceil(data.users.length / data.resultsPerPage);
+
+    if (curPage === 1 && numPages > 1) {
+      parentEelementPagination.innerHTML = '';
+
+      parentEelementPagination.innerHTML = `
+      <div class="right-arrow">
+        <img class="pagination-btn" src="images/right-arrow .png" data-go_to="${
+          curPage + 1
+        }" />
+      </div>
+      `;
+    }
+
+    if (numPages > curPage && curPage > 1) {
+      parentEelementPagination.innerHTML = '';
+
+      parentEelementPagination.innerHTML = `
+      <div class="right-arrow">
+        <img class="pagination-btn" src="images/right-arrow .png" data-go_to="${
+          curPage + 1
+        }" />
+      </div>
+
+      <div class="left-arrow">
+        <img class="pagination-btn" src="images/left-arrow.png" alt="" data-go_to="${
+          curPage - 1
+        }"/>
+      </div>
+      `;
+    }
+
+    if (curPage === numPages) {
+      parentEelementPagination.innerHTML = '';
+
+      parentEelementPagination.innerHTML = `
+      <div class="left-arrow">
+        <img class="pagination-btn" src="images/left-arrow.png" data-go_to="${
+          curPage - 1
+        }"/>
+      </div>
+      `;
+    }
+
+    if (numPages === 1 && curPage === 1) {
+      parentEelementPagination.innerHTML = '';
+    }
+  }
 
   displayAllUsers(allUsers?: ConfigUser[], currentUserId?: string | number) {
     allUsers!.forEach(singleUser => {
