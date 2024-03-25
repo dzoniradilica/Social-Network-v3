@@ -33,8 +33,6 @@ class DisplayUsersAndNewsView {
       '.pagination-wrapper'
     )! as HTMLDivElement;
 
-    console.log(data);
-
     const curPage = data.page;
     const numPages = Math.ceil(data.users.length / data.resultsPerPage);
 

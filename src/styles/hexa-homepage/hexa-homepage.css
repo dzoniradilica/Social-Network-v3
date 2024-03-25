@@ -217,6 +217,7 @@ section .chat {
   min-height: 34vh;
   opacity: 0;
   transition: all 1s;
+  bottom: 0;
 }
 section .chat .chat-wrapper {
   width: 100%;

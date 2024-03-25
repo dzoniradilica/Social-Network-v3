@@ -54,8 +54,6 @@ const controlDisplayUsers = async function () {
     const paginationUsers = await pagination.paginationResults();
     const currentUser = await user.get(session.sessionId);
 
-    console.log(paginationUsers);
-
     displayUsersAndNewsView.displayAllUsers(paginationUsers, currentUser.id);
 
     displayUsersAndNewsView.renderPagination(paginationState);
@@ -66,8 +64,6 @@ const controlDisplayUsers = async function () {
 
 const controlPagination = async function (goTo?: number) {
   try {
-    console.log(goTo);
-
     const paginationUsers = await pagination.paginationResults(goTo);
     const currentUser = await user.get(session.sessionId);
 
