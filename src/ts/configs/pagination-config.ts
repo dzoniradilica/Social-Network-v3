@@ -1,5 +1,7 @@
+import { ConfigUser } from './user-config';
+
 export interface ConfigPagination {
-  users: [];
+  users: ConfigUser[];
   page: number;
   resultsPerPage: number;
 }

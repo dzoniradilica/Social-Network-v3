@@ -1,9 +1,9 @@
 import { user } from './User.js';
 import { session } from './Session.js';
 import { ConfigUser } from '../configs/user-config.js';
-// import { ConfigPagination } from '../configs/pagination-config.js';
+import { ConfigPagination } from '../configs/pagination-config.js';
 
-export const paginationState: any = {
+export const paginationState: ConfigPagination = {
   users: [],
   page: 1,
   resultsPerPage: 4,
