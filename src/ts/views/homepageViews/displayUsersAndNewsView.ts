@@ -20,6 +20,8 @@ class DisplayUsersAndNewsView {
         '.pagination-btn'
       )! as HTMLImageElement;
 
+      if (!btn) return;
+
       const goTo = +btn.dataset.go_to!;
 
       handler(goTo);

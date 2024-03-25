@@ -17,6 +17,36 @@
     <script type="module" src="dist/controllers/controller2.js"></script>
   </head>
   <body>
+    <div class="custom-modal">
+      <form id="changeProfileForm">
+        <div class="change-inner-form">
+          <h3 id="closeModal">X</h3>
+
+          <div class="label-input-wrapper">
+            <label for="usernmae">Username:</label>
+            <input
+              type="usernmae"
+              name="changeUsername"
+              id="changeUsername"
+            />
+          </div>
+
+          <div class="label-input-wrapper">
+            <label for="email">Email:</label>
+            <input type="email" name="changeEmail" id="changeEmail" />
+          </div>
+
+          <div class="change-btn-inner">
+            <button id="changeProfile">Change Profile</button>
+          </div>
+
+          <div class="change-btn-inner delete-profile-btn">
+            <button id="deleteProfile">Delete Profile</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
     <main>
       <header>
         <div class="col-md-6">
@@ -152,36 +182,6 @@
               </div>
             </div> -->
           </div>
-        </div>
-
-        <div class="custom-modal">
-          <form id="changeProfileForm">
-            <div class="change-inner-form">
-              <h3 id="closeModal">X</h3>
-
-              <div class="label-input-wrapper">
-                <label for="usernmae">Username:</label>
-                <input
-                  type="usernmae"
-                  name="changeUsername"
-                  id="changeUsername"
-                />
-              </div>
-
-              <div class="label-input-wrapper">
-                <label for="email">Email:</label>
-                <input type="email" name="changeEmail" id="changeEmail" />
-              </div>
-
-              <div class="change-btn-inner">
-                <button id="changeProfile">Change Profile</button>
-              </div>
-
-              <div class="change-btn-inner delete-profile-btn">
-                <button id="deleteProfile">Delete Profile</button>
-              </div>
-            </div>
-          </form>
         </div>
       </section>
     </main>
