@@ -48,16 +48,24 @@ const controlChangeProfile = async function (userData: [string, string]) {
 };
 
 const controlDisplayUsers = async function () {
-  const allUsers = await user.getAll();
-  const currentUser = await user.get(session.sessionId);
+  try {
+    const paginationUsers = await pagination.paginationResults(1);
+    const currentUser = await user.get(session.sessionId);
 
-  displayUsersAndNewsView.displayAllUsers(allUsers, currentUser.id);
+    displayUsersAndNewsView.displayAllUsers(paginationUsers, currentUser.id);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const controlDisplayNews = async function () {
-  const allNews = await news.getAll();
+  try {
+    const allNews = await news.getAll();
 
-  displayUsersAndNewsView.displayAllNews(allNews);
+    displayUsersAndNewsView.displayAllNews(allNews);
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 const controlDeleteProfile = async function () {
@@ -113,8 +121,6 @@ const controlSendMessage = async function () {
 
   displayAllMessages.displayMess(allMessages, currentUser);
 };
-
-pagination.paginationResults();
 
 const init = function () {
   controlProfileView();

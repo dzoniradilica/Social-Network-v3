@@ -1,4 +1,6 @@
 import { user } from './User.js';
+import { session } from './Session.js';
+import { ConfigUser } from '../configs/user-config.js';
 // import { ConfigPagination } from '../configs/pagination-config.js';
 
 export const paginationState: any = {
@@ -8,13 +10,14 @@ export const paginationState: any = {
 };
 
 class Pagination {
-  async paginationResults(page = paginationState.page) {
+  async paginationResults(page: number = paginationState.page) {
     paginationState.page = page;
 
-    const allUsers: object[] = await user.getAll();
+    const allUsers: ConfigUser[] = await user.getAll();
 
     allUsers.forEach(singleUser => {
-      paginationState.users.push(singleUser);
+      if (singleUser.id !== session.sessionId)
+        paginationState.users.push(singleUser);
     });
 
     const start = (page - 1) * paginationState.resultsPerPage;
