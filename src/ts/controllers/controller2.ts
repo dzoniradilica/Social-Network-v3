@@ -12,6 +12,7 @@ import { changeView } from '../views/homepageViews/changeView.js';
 import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndNewsView.js';
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
+// import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
 
 import { paginationState } from '../models/Pagination.js';
 
@@ -59,6 +60,13 @@ const controlDisplayUsers = async function () {
     console.log(err);
   }
 };
+
+// const controlDisplayMessages = async function () {
+//   const allMessages = await message.getAll();
+//   const currentUser = await user.get(session.sessionId);
+
+//   displayAllMessages.displayMess(allMessages, currentUser);
+// };
 
 const controlPagination = async function (goTo?: number) {
   try {
@@ -150,7 +158,6 @@ const init = function () {
   changeView.addHandlerChange(controlChangeProfile);
   addPostView.addPostHandler(controlAddPost);
   displayUsersAndNewsView.addHandlerClick(controlPagination);
-  // displayUsersAndNewsView.addHandlerSendMessage(controlSendMessage);
 };
 
 init();
