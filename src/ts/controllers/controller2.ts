@@ -12,8 +12,6 @@ import { changeView } from '../views/homepageViews/changeView.js';
 import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndNewsView.js';
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
-// import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
-// import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
 
 import { paginationState } from '../models/Pagination.js';
 
