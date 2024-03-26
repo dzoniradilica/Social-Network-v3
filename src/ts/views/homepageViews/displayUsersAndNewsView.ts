@@ -99,8 +99,20 @@ class DisplayUsersAndNewsView {
         `;
 
         this.parentElementUsers.insertAdjacentHTML('afterbegin', html);
+
+        this.getParentElement(this.parentElementNews);
       }
     });
+  }
+
+  addHandlerSendMessage(handler: Function) {
+    console.log(this.getParentElement());
+
+    handler();
+  }
+
+  getParentElement(ple?: any) {
+    return ple;
   }
 
   displayAllNews<T extends ConfigNews>(allNews: T[]) {

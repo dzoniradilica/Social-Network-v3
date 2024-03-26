@@ -41,21 +41,6 @@ class SendMessageView {
 
       const chatParent = document.querySelector('.chat')! as HTMLDivElement;
 
-      const mutationObserver = new MutationObserver(mutations => {
-        mutations.forEach(mutation => {
-          console.log(mutation);
-        });
-      });
-
-      mutationObserver.observe(document.documentElement, {
-        attributes: true,
-        characterData: true,
-        childList: true,
-        subtree: true,
-        attributeOldValue: true,
-        characterDataOldValue: true,
-      });
-
       chatBtn.forEach(btn => {
         btn.addEventListener('click', e => {
           const displayChat = async function () {
@@ -88,10 +73,78 @@ class SendMessageView {
           displayChat();
         });
       });
+
+      const targetElement = document.querySelector(
+        '.users-wrapper'
+      )! as HTMLDivElement;
+
+      console.log(targetElement);
+
+      const config = { childList: true, attributes: true, subtree: true };
+
+      function callback(mutationsList: any, observer: any) {
+        for (let mutation of mutationsList) {
+          console.log(mutation);
+          console.log(observer);
+
+          if (mutation.type === 'childList') {
+            console.log('A child node has been added or removed.');
+          } else if (mutation.type === 'attributes') {
+            console.log('Attributes of the target element have been modified.');
+          }
+        }
+      }
+
+      const observer = new MutationObserver(callback);
+      observer.observe(targetElement, config);
+      observer.disconnect();
+
+      // document.addEventListener('DOMSubtreeModified', e => {
+      //   const usersWrapper = e.target! as HTMLDivElement;
+
+      //   const chatBtn = usersWrapper.querySelectorAll(
+      //     '#sendMessage'
+      //   ) as NodeListOf<HTMLButtonElement>;
+
+      //   chatBtn.forEach(btn => {
+      //     btn.addEventListener('click', e => {
+      //       const displayChat = async function () {
+      //         chatParent.innerHTML = '';
+      //         chatParent.style.opacity = '0';
+
+      //         const messageClass = new SendMessageView();
+
+      //         const user_id = (e.target! as HTMLButtonElement).dataset.user_id!;
+      //         const singleUser: ConfigUser = await user.get(user_id);
+
+      //         const html = messageClass.renderChat(singleUser);
+
+      //         chatParent.insertAdjacentHTML('afterbegin', html);
+
+      //         chatParent.style.opacity = `100`;
+
+      //         handler(user_id);
+
+      //         const closeChat = chatParent.querySelectorAll('#closeChat');
+
+      //         closeChat.forEach(btn => {
+      //           btn.addEventListener('click', () => {
+      //             chatParent.style.opacity = '0';
+      //           });
+      //         });
+
+      //         messageClass.renderMessages(chatParent);
+      //       };
+      //       displayChat();
+      //     });
+      //   });
+      // });
     }, 2000);
   }
 
   renderMessages(chatParent: HTMLDivElement) {
+    console.log(chatParent);
+
     const sendBtn = chatParent.querySelector(
       '#sendMessage'
     ) as HTMLButtonElement;
@@ -105,6 +158,7 @@ class SendMessageView {
         .previousElementSibling! as HTMLInputElement;
 
       const chatBody = chatParent.querySelector('.chat-body') as HTMLDivElement;
+
       const html = `
         <div class="message-sent" data-user_id="${session.sessionId}">
           <p data-sent_user_id="">${chatContent.value}</p>

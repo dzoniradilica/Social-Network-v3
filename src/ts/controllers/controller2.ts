@@ -3,7 +3,7 @@ import { user } from '../models/User.js';
 import { post } from '../models/Post.js';
 import { comment } from '../models/Comment.js';
 import { news } from '../models/News.js';
-import { message } from '../models/Message.js';
+// import { message } from '../models/Message.js';
 import { pagination } from '../models/Pagination.js';
 
 import { logoutDeleteView } from '../views/homepageViews/logoutAndDeleteView.js';
@@ -12,8 +12,8 @@ import { changeView } from '../views/homepageViews/changeView.js';
 import { displayUsersAndNewsView } from '../views/homepageViews/displayUsersAndNewsView.js';
 import { addPostView } from '../views/homepageViews/addPostCommentView.js';
 import { displayAllComments } from '../views/homepageViews/displayAllCommentsView.js';
-import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
-import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
+// import { sendMessageView } from '../views/homepageViews/sendMessageView.js';
+// import { displayAllMessages } from '../views/homepageViews/displayAllMessages.js';
 
 import { paginationState } from '../models/Pagination.js';
 
@@ -132,12 +132,14 @@ const controlDisplayComments = async function () {
   }
 };
 
-const controlSendMessage = async function () {
-  const allMessages = await message.getAll();
-  const currentUser = await user.get(session.sessionId);
+// const controlSendMessage = async function (handler: any) {
+//   // const allMessages = await message.getAll();
+//   // const currentUser = await user.get(session.sessionId);
 
-  displayAllMessages.displayMess(allMessages, currentUser);
-};
+//   // displayAllMessages.displayMess(allMessages, currentUser);
+
+//   console.log(handler);
+// };
 
 const init = function () {
   controlProfileView();
@@ -150,7 +152,7 @@ const init = function () {
   changeView.addHandlerChange(controlChangeProfile);
   addPostView.addPostHandler(controlAddPost);
   displayUsersAndNewsView.addHandlerClick(controlPagination);
-  sendMessageView.addHandlerSendUser(controlSendMessage);
+  // displayUsersAndNewsView.addHandlerSendMessage(controlSendMessage);
 };
 
 init();
